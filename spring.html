@@ -1,0 +1,2237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, maximum-scale=1">
+        <title>SPRING | UP School of Urban and Regional Planning</title>
+        <link rel="icon" href="img/surplogo.png" type="image/gif" sizes="16x16">
+        <link rel="icon" href="img/surplogo.png" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script src="js/script.js"></script>
+	    <script type="text/javascript" src="js/jquery.plugin.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 2px solid black;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #b4d8d8;
+    }
+                    
+    tr:nth-child(even) {
+        background-color: #dff4f4;
+    }
+    
+    #horizontal-nav-tabs {
+  margin-top: 20px;
+  font-weight: 900;
+  font-size: 1vw;
+  background-color: transparent; }
+
+#horizontal-nav-tabs li a {
+  color: #555;
+  background-color: #EEE;
+  height: 1vw; }
+
+    
+    
+#horizontal-nav-tabs .active a {
+  color: #1c4587!important;
+  background-color: #FFF; }
+
+#horizontal-nav-tabs .dropdown-menu li a {
+  font-size: 1vw;
+  color: #555 !important;
+  height: 100% !important; }
+
+#horizontal-nav-tabs .dropdown-menu li a:hover,
+#horizontal-nav-tabs .dropdown-menu li a:focus {
+  background-color: #1c4587!important;
+  color: #FFF !important; }
+    
+
+#icurp-horizontal-nav {
+  background: #FFF;
+  border: none; }
+
+#icurp-horizontal-nav li a {
+  color: white;
+    font-size: 1vw;
+  border: 1px solid #DDD;
+  background-color: #639a00;
+ font-weight: 600;
+  margin: 0 2px 0 2px;
+  padding: 3px 0 3px 0;
+    }
+
+#icurp-horizontal-nav li a:hover,
+#icurp-horizontal-nav li a:focus {
+  color: black;
+  background-color: #8edd01; }
+
+   
+#home-banner img {
+  width: 100%;
+  height: auto; }
+
+.tab-content .tab-pane .tab-pane-title {
+  color: #1c4587;
+  font-weight: 600;
+  font-size: 1.4vw; }
+
+.tab-content .tab-pane .section-title {
+  color: #1c4587;
+  font-weight: 900;
+font-size: 1vw}
+
+.tab-content {
+  color: black; }
+
+li { color:#000;}
+        li a{ color:#000;}
+        li a:hover{ color:black; text-decoration:underline;}
+    
+    .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #639a00;
+}
+    
+    tr:nth-child(odd) {
+    background-color: #e8f3d0;
+}
+    
+    tr:nth-child(even) {
+    background-color: white;
+}
+    .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #000;
+    cursor: default;
+    background-color: rgba(0, 0, 0, .0001);
+    border-color: rgba(0, 0, 0, .0001);
+}
+</style>
+    
+    <body>
+    
+        <div id="header">
+            <div id="header-img">
+                <img id="updlogo" src="img/updlogo.png">
+            </div>
+            
+            <div id="menu-container">
+                <ul id="mainmenu">
+                    <li class="menu-element"><a href="index.html">Home</a></li>
+                    <li class="menu-element"><a href="#">About SURP <i class="arrow down"></i></a>
+                        <ul id="dropdown" style="padding: 0.5vw;-webkit-columns: 2; -moz-columns: 2; columns: 2; list-style-position: inside; left: -15vw">
+                            <li><a href="administration.html">UP SURP Organizational Profile</a></li>
+                             <li><a href="vision%20&%20mission.html">Vision and Mission</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="Major%20Mandate.html">Major Mandate & Functions</a></li>
+                            <li><a href="surp%20committees.html">Administrative and Academic Committees</a></li>
+                            <li><a href="data%20privacy.html">UPD Data Privacy Policy</a></li>
+                            <li><a href="downloads/Code%20of%20Conduct%20and%20Ethical%20Standards.pdf" target="_blank">Code of Conduct and Ethical Standards</a></li>
+                            <li><a href="former-deans.html">Former Deans</a></li>
+                            <li><a href="alumni%20and%20partners.html">Alumni & Development Partners</a></li>
+                            <li><a href="gad%20committee.html">Gender and Development (GAD)</a></li>
+                            <li><a href="SURP%20Complex.html">UP SURP Complex</a></li>
+                            <li><a href="logo.html">School Logo</a></li> 
+                        </ul>
+                    </li>
+                   
+                    <li class="menu-element"><a href="#">Students <i class="arrow down"></i></a>
+                        <ul id="dropdown" style="padding: 0.5vw;-webkit-columns: 2; -moz-columns: 2; columns: 2; list-style-position: inside; left: -10vw">
+                            <li><a href="students.html">Student Corner</a></li>
+                            <li><a href="rules%20and%20policy.html">University Rules & IT Policy</a></li>
+                          
+                            <li><a href="academic%20guidelines.html">Academic Process</a></li>
+                            <li><a href="announcements/ACAD%20CAL_26.pdf" target="_blank">UPD Academic Calendar</a></li>
+                        </ul>
+                    </li>    
+                    
+                    <li class="menu-element"><a href="">Business Processes <i class="arrow down"></i></a>
+                        <ul id="dropdown" style="padding: 0.5vw;-webkit-columns: 2; -moz-columns: 2; columns: 2; list-style-position: inside; left: -10vw">
+                            <li><a href="academic%20guidelines.html">Academic Process</a></li>
+                            <li><a href="admin%20process.html">Administrative Process</a></li>
+                            <li><a href="library%20process.html">Library Service Process</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="menu-element"><a href="">Citizen's Charter <i class="arrow down"></i></a>
+                        <ul id="dropdown" style="padding: 0.5vw;-webkit-columns: 1; -moz-columns: 1; columns: 1; list-style-position: inside; left: -3vw">
+                            <li><a href="/downloads/csc/Citizen%20Charter%20UP%20SURP.pdf" target="_blank">UP SURP Citizen's Charter</a></li>
+                            <li><a href="/downloads/SURP%20CSM%20QR.pdf" target="_blank">UP SURP CSM Survey QR Code</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="menu-element"><a href="search.html" class="glyphicon glyphicon-search" role="button"></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    
+        <div id="main">
+            
+            <div id="announcements-title" class="block-title"><strong style="font-size:1.4vw;">Spatial Planning for Regions in Growing Economies (SPRING) </strong></div> 
+            <nav class="navbar navbar-default collapse navbar-collapse " id="icurp-horizontal-nav">
+                <ul class="nav nav-pills nav-justified">
+                    <li><a data-toggle="tab" href="#msrdp-pane"><span>MSRDP Year 2</span></a></li>
+                    <li><a data-toggle="tab" href="#process-pane"><span>Administrative Processes</span></a></li>
+                    <li><a data-toggle="tab" href="#process2-pane"><span>Academics</span></a></li>
+                    <li><a data-toggle="tab" href="#student-pane"><span>Student Life</span></a></li>
+                    <li><a data-toggle="tab" href="#contact-pane"><span>Contact</span></a></li>
+                </ul>
+            </nav>
+      
+            <div class="container-fluid">
+                <div id="home-banner">
+                    <center><img src="img/spring_logo.png" class="img-responsive" style="width: 100%"></center><br><br><br>
+                    
+                    <div id="left-panel">
+                        <div id="announcements-title" class="block-title">NEWS</div>
+
+                        <ul id="announcement-list" class="list_ul_amrc2" style="text-decoration-color:red;">
+
+                            <li><a href="" target="_blank">News Sample 1</a>
+                                <div class="announcement-date"><small>Date Posted: January 1, 2026</small></div>
+                            </li>
+
+                        </ul>
+
+                        <!-- Separate Controls -->
+                        <div style="margin-top:15px; text-align:center;">
+                            <button onclick="prevAnnouncement()">&#10094;</button>
+                            <button onclick="nextAnnouncement()">&#10095;</button>
+                        </div>
+                    </div>
+
+                    <style>
+                        #announcement-list li {
+                            display: none;
+                            margin-bottom: 10px;
+                        }
+
+                        button {
+                            padding: 8px 15px;
+                            margin: 5px;
+                            border: none;
+                            background: transparent;
+                            color: black;
+                            cursor: pointer;
+                            border-radius: 50%;
+                            font-size: 1.5vw;
+                            width: 3vw;
+                            height: 3vw;
+                        }
+
+                        button:hover {
+                            background: lightgreen;
+        }
+
+                        #announcement-page-number {
+                            font-weight: bold;
+                            font-size: 16px;
+                            margin: 0 10px;
+                            vertical-align: middle;
+                        }
+                    </style>
+
+                    <script>
+                        let announcementPage = 0;
+                        const announcementItemsPerPage = 4;
+                        const announcementItems = document.querySelectorAll("#announcement-list li");
+                        const totalAnnouncementPages =
+                              Math.ceil(announcementItems.length / announcementItemsPerPage);
+
+                        function showAnnouncementPage(page) {
+                            announcementItems.forEach(item => item.style.display = "none");
+
+                            let start = page * announcementItemsPerPage;
+                            let end = start + announcementItemsPerPage;
+
+                            for (let i = start; i < end && i < announcementItems.length; i++) {
+                                announcementItems[i].style.display = "block";
+                            }
+
+                            document.getElementById("announcement-page-number").innerText =
+                                (announcementPage + 1) + " / " + totalAnnouncementPages;
+                        }
+
+                        function nextAnnouncement() {
+                            if (announcementPage < totalAnnouncementPages - 1) {
+                                announcementPage++;
+                                showAnnouncementPage(announcementPage);
+                            }
+                        }
+
+                        function prevAnnouncement() {
+                            if (announcementPage > 0) {
+                                announcementPage--;
+                                showAnnouncementPage(announcementPage);
+                            }
+                        }
+
+                        showAnnouncementPage(announcementPage);
+                    </script>
+
+                    <div id="right-panel">
+                        <div id="announcements-title" class="block-title">ANNOUNCEMENTS</div>
+
+                        <ul id="memo-list" class="list_ul_amrc2" style="text-decoration-color:red;">
+                            <li><a href="" target="_blank">Announcement Sample 1</a>
+                                <div class="announcement-date"><small>Date Posted: January 1, 2026</small></div>
+                            </li>
+
+                        </ul>
+
+                        <!-- Controls -->
+                        <div style="margin-top:15px; text-align:center;">
+                            <button onclick="prevPage()">&#10094;</button>
+                            <button onclick="nextPage()">&#10095;</button>
+                        </div>
+                    </div>
+
+                    <style>
+                        #memo-list li {
+                            display: none;
+                            margin-bottom: 10px;
+                        }
+
+                        button {
+                            padding: 8px 15px;
+                            margin: 5px;
+                            border: none;
+                            background: transparent;
+                            color: black;
+                            cursor: pointer;
+                            border-radius: 50%;
+                            font-size: 1.5vw;
+                            width: 3vw;
+                            height: 3vw;
+                        }
+
+                        button:hover {
+                            background: transparent;
+                        }
+
+                        #page-number {
+                            font-weight: bold;
+                            font-size: 16px;
+                            margin: 0 10px;
+                            vertical-align: middle;
+                        }
+                    </style>
+
+                    <script>
+                        let currentPage = 0;
+                        const itemsPerPage = 5;
+                        const items = document.querySelectorAll("#memo-list li");
+                        const totalPages = Math.ceil(items.length / itemsPerPage);
+
+                        function showPage(page) {
+                            items.forEach(item => item.style.display = "none");
+
+                            let start = page * itemsPerPage;
+                            let end = start + itemsPerPage;
+
+                            for (let i = start; i < end && i < items.length; i++) {
+                                items[i].style.display = "block";
+                            }
+
+                            document.getElementById("page-number").innerText =
+                                (currentPage + 1) + " / " + totalPages;
+                        }
+
+                        function nextPage() {
+                            if (currentPage < totalPages - 1) {
+                                currentPage++;
+                                showPage(currentPage);
+                            }
+                        }
+
+                        function prevPage() {
+                            if (currentPage > 0) {
+                                currentPage--;
+                                showPage(currentPage);
+                            }
+                        }
+
+                        showPage(currentPage);
+                    </script>
+                    <br><br><br>
+                    
+                    <div id="center-panel">
+                        <div class="container" style="width:80%;">
+                    <div class="row">
+                        <div class="well">
+
+                            <h1 id="announcements-title"
+                                class="block-title"
+                                style="margin-top:-0.7vw; font-size:1.8vw; background:transparent;">
+                                EVENTS
+                            </h1>
+
+                            <div class="list-group">
+
+                                <!-- EVENT 1 -->
+                                <a href="" class="list-group-item event-item">
+                                    <div class="media col-md-4">
+                                        <figure>
+                                            <img class="media-object img-rounded img-responsive"
+                                                 src="/img/spring_logo.jpg">
+                                        </figure>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="vision-text">
+                                            <b>Event Sample 1</b><br>
+                                            <small style="color:darkred">Date Posted: January 1, 2026</small><br><br>
+                                            <small>
+                                                This is a sample event only.
+                                            </small>
+                                        </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </a>
+
+                            </div>
+
+                            <!-- PAGINATION -->
+                            <center><div class="pagination-container" style="font-size: 1vw;">
+                                <ul class="pagination" id="pagination"></ul>
+                            </div></center>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <script>
+                document.addEventListener("DOMContentLoaded", function () {
+
+                    const itemsPerPage = 3;
+                    const items = document.querySelectorAll(".event-item");
+                    const totalPages = Math.ceil(items.length / itemsPerPage);
+
+                    let currentPage = 1;
+
+                    function showPage(page) {
+
+                        currentPage = page;
+
+                        items.forEach(function(item) {
+                            item.style.display = "none";
+                        });
+
+                        const start = (page - 1) * itemsPerPage;
+                        const end = start + itemsPerPage;
+
+                        for (let i = start; i < end && i < items.length; i++) {
+                            items[i].style.display = "block";
+                        }
+
+                        renderPagination();
+                    }
+
+                    function renderPagination() {
+
+                        const pagination = document.getElementById("pagination");
+                        pagination.innerHTML = "";
+
+                        // Previous Button
+                        const prev = document.createElement("li");
+                        prev.className = currentPage === 1 ? "disabled" : "";
+
+                        prev.innerHTML =
+                            '<a href="#"><span>&laquo;</span></a>';
+
+                        prev.onclick = function(e) {
+                            e.preventDefault();
+
+                            if (currentPage > 1) {
+                                showPage(currentPage - 1);
+                            }
+                        };
+
+                        pagination.appendChild(prev);
+
+                        // Page Numbers
+                        for (let i = 1; i <= totalPages; i++) {
+
+                            const page = document.createElement("li");
+
+                            if (i === currentPage) {
+                                page.className = "active";
+                            }
+
+                            page.innerHTML =
+                                '<a href="#">' + i + '</a>';
+
+                            page.onclick = function(e) {
+                                e.preventDefault();
+                                showPage(i);
+                            };
+
+                            pagination.appendChild(page);
+                        }
+
+                        // Next Button
+                        const next = document.createElement("li");
+                        next.className = currentPage === totalPages ? "disabled" : "";
+
+                        next.innerHTML =
+                            '<a href="#"><span>&raquo;</span></a>';
+
+                        next.onclick = function(e) {
+                            e.preventDefault();
+
+                            if (currentPage < totalPages) {
+                                showPage(currentPage + 1);
+                            }
+                        };
+
+                        pagination.appendChild(next);
+                    }
+
+                    showPage(1);
+                });
+                </script>
+                </div>
+
+                <div class="container-fluid" style="width: 80%">
+        <div class="tab-content">
+            <div id="msrdp-pane" class="tab-pane fade">
+                <div class="vision-text">
+                    <a style="color: #639a00" id="about-title" class="tab-pane-title" href="https://raumplanung.tu-dortmund.de/en/study/master-spring/?fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAaftsbd9lvUSKvIfBqv8It6okeVTgPOdJoEbpydB_iyCaNaSjKpB3AUydGxepw_aem_s-lbhdmo3YoVs9z3Rl5htw&utm_content=link_in_bio&utm_medium=social&utm_source=ig" target="_blank" class="active">The MSRDP SPRING-Asia Program Year 2</a>
+                    <hr>
+                    The SPRING-Asia Program is an international graduate program that aims to strengthen regional development planning capacities through interdisciplinary and intercultural learning. Students spend the first phase (Year 1) of the program at TU Dortmund University in Germany before proceeding to a partner university like UP SURP for the second phase (Year 2) of their academic training.<br><br>
+                    During the Phase II of the SPRING-Asia Program at UP SURP, students complete the academic requirements for the degree of Master of Science in Regional Development Planning (MSRDP). The program combines classroom instruction, field-based learning, planning workshops, and research focused on development issues in the Philippines and growing economies.<br><br>
+                    The academic requirements are typically completed within two semesters:
+                    <ul><br>
+                        <li><b>First Semester (August to December)</b><br>
+                        Students take lecture-based courses providing theoretical and methodological foundations:
+                            <ul>
+                                <li>Plan 203 – Land Use Planning (3 units)</li>
+                                <li>Plan 210 – Planning Process (3 units)</li>
+                                <li>Plan 214 – Planning Analysis and Techniques (3 units)</li>
+                                <li>Plan 219 – Special Problems in Urban Planning (3 units)</li>
+                                <li>Plan 299 – Research Methods in Planning (3 units)</li>
+                            </ul>
+                        </li><br>
+                        <li><b>Second Semester (January to June)</b><br>
+                            Focuses on fieldwork, applied planning, and independent thesis research:
+                            <ul>
+                                <li>Plan 210.1 – Planning Workshop (5 units)</li>
+                                <li>Plan 229 – Special Problems in Regional Planning (3 units)</li>
+                                <li>Plan 300 – Master’s Thesis (6 units)</li>
+                            </ul>
+                        </li>
+                    </ul><br>
+                    The Planning Workshop and thesis components require students to engage directly with local communities, institutions, and development issues. Field study activities may involve travel to partner local government units (LGUs) or project sites outside Metro Manila.<br><br><br>
+                    
+                    
+                                 
+                </div>
+            </div> 
+            
+            <div id="process-pane" class="tab-pane fade">
+                    <span id="about-title" class="tab-pane-title" style="color: #639a00">MSRDP Administrative Processes and Requirements</span>
+                    <hr>
+                    <div class="container" style="width: 100%">
+                    <div class="row">
+                        <div role="tabpanel">
+                            <div class="col-sm-3">
+                                <ul class="nav nav-pills brand-pills nav-stacked" role="tablist" style="color: #000;font-weight: 400;font-size: 1vw;text-align: justify;padding: 0.6vw;">
+                                    <li role="presentation" class="brand-nav active"><a href="#tab1" aria-controls="tab" role="tab" data-toggle="tab" style="text-align: left;">Academic Fees</a></li>
+                                    <li role="presentation" class="brand-nav"><a href="#tab2" aria-controls="tab" role="tab" data-toggle="tab" style="text-align: left">Admission and Registration</a></li>
+                                    <li role="presentation" class="brand-nav"><a href="#tab3" aria-controls="tab" role="tab" data-toggle="tab" style="text-align: left">Thesis Form Submissions</a></li>
+                                    <li role="presentation" class="brand-nav"><a href="#tab4" aria-controls="tab" role="tab" data-toggle="tab" style="text-align: left">Conferment of Degree</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-sm-9">
+                                <div class="tab-content">
+                                    
+                                    <div role="tabpanel" class="tab-pane active" id="tab1">
+                                        <div class="vision-text">
+                                            As a state university and the only national university in the country, UP is
+                                            supported largely by public funds. As such, international students are charged
+                                            higher academic fees than Filipino students, in recognition of the public funding
+                                            that supports the University's mandate to provide accessible education to
+                                            Filipinos. These fees are known as Education Development Fees paid by resident
+                                            and non-resident international students.<br><br>
+                                            This difference in academic fees is not meant to suggest that international
+                                            students are treated as second-class members of the UP community, nor does it
+                                            reflect any difference in the value that the University places on them. Rather, it
+                                            recognizes the nature of UP as a national university and its responsibility in
+                                            ensuring that public funds primarily support the education of Filipino students,
+                                            while international students contribute a greater share toward the cost of the
+                                            education and resources they receive from the university.
+                                        </div>
+                                    </div> 
+                    
+                                    <div role="tabpanel" class="tab-pane" id="tab2">
+                                        <div class="vision-text">
+                                            Months before arriving in the Philippines, the OCS coordinates with upcoming SPRING students and have them send the following documents via email to facilitate visa and admission slip issuance:<br><br>
+                                            <ol>
+                                                <li>Information Sheet</li>
+                                                <li>College Admission Sheet</li>
+                                                <li>Student Directory</li>
+                                                <li>Proposed Plan of Study</li>
+                                                <li>Provisional Admission</li>
+                                                <li>Bachelors Diploma (if copy, certified by TUDo)</li>
+                                                <li>Bachelors Transcript (if copy, certified by TUDo)</li>
+                                                <li>TUDo First Year Transcripts</li>
+                                                <li>TUDo First Year Grades</li>
+                                                <li>Birth Certificate</li>
+                                                <li>Marriage Certificate, if applicable</li>
+                                                <li>Passport Biopages</li>
+                                                <li>Health Insurance</li>
+                                            </ol>
+                                            Upon arriving in the Philippines, students then submit the original hardcopies of the documents and affix their wet signatures in place of the electronically signed documents.<br><br>
+                                            <ul>
+                                                <strong>Medical Certificate</strong><br><br>
+                                                Another requirement for admission into the University is the medical certificate validated by the University Health Service (UHS). This certificate is issued upon the completion of the Physical Examination and Health Assessment (PEHA).<br><br>
+                                                For students who have already arrived in the Philippines, the PEHA may be done physically at the UHS or in any of their preferred facility in the Philippines. PEHA fees when done at the UHS usually only account for specimen containers, while diagnostic tests, dental examination, and verificatory consultations done outside may range upwards of PhP 2,000.<br><br>
+                                                For students who have yet to arrive in the Philippines by the start of classes, the diagnostic tests and medical consultations may be done at their preferred facility in closest to them—ensuring that all PEHA forms have been filled out and appropriately signed by an attending physician and dentist. The student will then request a provisional medical certificate from the UHS by submitting their PEHA forms and diagnostic test results via email for UHS evaluation. Students taking this route shall bring the original hard copies of the diagnostic test results and PEHA forms to UP SURP.<br><br>
+                                                <strong>UP Mail and DilNet Accounts</strong><br><br>
+                                                Students should apply for UP Mail and DilNet accounts as these credentials offer students access to various subscriptions and resources available to the university. This include MS 365 (available upon request), Adobe Creative Cloud, and various journals in a wide array of fields.<br><br>
+                                                The steps for applying for a UP Mail account are as follows:<br><br><ul>
+                                                <strong>Onsite Requests:</strong><br><br>
+                                                <ol>
+                                                    <li>Proceed to the DILNET HelpDesk at the University Computer Center and present the following to the HelpDesk personnel:
+                                                        <ul>
+                                                            
+                                                            <li>Proceed to the DILNET HelpDesk at the University Computer Center and present the following to the HelpDesk personnel
+                                                                <ul>
+                                                                    <li>Clear photo of UP ID or Government ID with picture</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li><br>
+                                                    <li>The student’s DILNET account will be available immediately after processing. However, UP Mail accounts will be queued for daily batch processing and will be sent to their nominated personal email address.<br><br>
+                                                    UP Mail accounts generation are batch processed by End-of-Day from Mondays through Thursdays, excluding holidays and work suspensions. Account generation for requests filed on Fridays will be queued for the next working day.
+                                                    </li>
+                                                    
+                                                </ol><br>
+                                                <strong>Online Requests:</strong><br><br>
+                                                <ol>
+                                                    <li>Send an email to helpdesk@upd.edu.ph</li><br>
+                                                    <li>In the email body, kindly include the following relevant information:<br>
+                                                        Name:<br>Lastname, Given Name Middle Name, Name Suffix<br>(if applicable) <br>Employee/Student #: <br>2026XXXXX (no hyphen)<br><br>
+                                                        E.g.<br> Name: <br>Dela Cruz, Juan Gomez, Jr. <br>Student #: 202456789
+                                                    </li><br>
+                                                    <li>Attach with the email the following requirements:
+                                                        <ul>
+                                                            <li>Clear photo of UP ID or Government ID with picture</li>
+                                                            <li>Selfie with the provided ID
+                                                                <ul>
+                                                                    <li>Face and ID should both be clearly visible.</li>
+                                                                </ul>
+                                                            </li><br>
+                                                            Please be advised that the above requirements are all required for online processing.<br><br>
+                                                        </ul>
+                                                        UP Mail accounts generation are batch processed by End-of-Day from Mondays through Thursdays, excluding holidays and work suspensions. Account generation for requests filed on Fridays will be queued for the next working day.
+                                                    </li>
+                                                </ol><br>
+                                                For more information, kindly visit the <a href="https://dilnet.upd.edu.ph/kb/apply-for-a-dilnet-account/" target="_blank" class="active">Diliman Network Helpdesk Website.</a>
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                    
+                                    <div role="tabpanel" class="tab-pane" id="tab3">
+                                        <div class="vision-text">
+                                            Students and the faculty must include the OCS email address (surp.ogs.upd@up.edu.ph) for every form submission and key milestone correspondence for academic progress monitoring. The OCS will consider only up to three (3) email threads per student. When including the OCS in the correspondence, the email subject must strictly follow the format:<br><br>
+                                            <ul>
+                                                <li>[SPRING_Last Name, Given Name] Thesis Forms Submission Thread</li>
+                                                <li>[SPRING_Last Name, Given Name] Manuscript Format Review Thread</li>
+                                                <li>[SPRING_Last Name, Given Name] Milestone Correspondence Thread</li>
+                                            </ul>
+                                            Requests or submissions made outside the prescribed threads will not be entertained or considered valid.
+                                        </div>
+                                    </div> 
+        
+                                    <div role="tabpanel" class="tab-pane" id="tab4">
+                                        <div class="vision-text">
+                                            Once finished, students will earn a degree in MS Regional Development Planning jointly awarded by the University of the Philippines and TU Dortmund University.<br><br>
+                                            Upon completion of coursework and thesis, students may be able to request a certificate of completion that may stand for the actual diploma.<br><br>
+                                            Diploma processing in the university requires the following:<br><br>
+                                            <ul><strong>Clearance > Transcript of Records > Certificate of Graduation > Diploma</strong><br><br>
+                                                <ol>
+                                                    <li><strong>Application for Graduation</strong><br>
+                                                    <ul>To be included in the tentative list of candidates for graduation, students must submit an application for graduation to the OCS. Upon submission, the School Records Evaluator will check and assess each student applying for graduation. If the student has finished all their coursework, then they will be included in the tentative list.</ul>
+                                                    </li><br>
+                                                    <li><strong>University Clearance</strong><br>
+                                                    <ul>The student must be cleared/free of all accountabilities, delinquencies, and/or deficiencies in order to receive clearance. This includes the fulfilment of outstanding fees, school work, missing requirements, and uncompleted forms.<br><br>
+                                                        If you opted for in-person payment through the Cash Office, validation of your payment becomes real-time, while online payments might take 1-3 banking days before payment is credited. Upon receipt of the proof of payment (for online transactions), students may monitor the status of their clearance through their CRS account. Processing of the clearance may take 5-10 working days upon crediting of payment. After receiving clearance, only then will the student be able to separately apply for the transcript of records, certificate of graduation, and other documents.<br><br>
+                                                        Kindly note that the months of July-October are the peak period for the university, which can only accommodate 150 applicants per day. Regardless, your application will be queued accordingly.<br><br>
+                                                        While these processes are done by the Office of the College Secretary on the students’ behalf, it is strongly recommended that students are knowledgeable of the procedures and requirements. The School can only extend its services insofar as processing your requirements; the School remains subject to university process timelines, guidelines, and requirements. As such, the School does not have the power to expedite or fast-track the processing of documents.</ul>
+                                                    </li><br>
+                                                    <li><strong>Transcript of Records</strong><br>
+                                                    <ul>The transcript of records is applied through the UP ATIN portal accessible via UP Mail. Students may choose to apply on their own or have the OCS apply on their behalf, in which case, said students must provide OCS their UP Mail credentials and passwords.<br><br>
+                                                        Kindly note that the University processes Transcript of Records by batch and it may take around 6-9 months to release.</ul>
+                                                    </li><br>
+                                                     <li><strong>Certificate of Completion</strong><br>
+                                                    <ul>In lieu of the Transcript of Records, the OCS may issue a Certificate of Completion of Academic Requirements and a Certificate of Completed courses to students while waiting for their Transcript of Records to be released.<br><br>
+                                                        Kindly bear in mind that these certificates are issued only upon request. The release of such certificates may take up to 2 weeks.</ul>
+                                                    </li><br>
+                                                     <li><strong>Diploma</strong><br>
+                                                    <ul>Students need not apply for a diploma. They must only be cleared of all accountabilities, deficiencies, and delinquencies before being eligible to receive their diploma. Six to nine months after graduation, the University issues the Diploma to the School. The School then sends it to TU Dortmund for signature. Upon signing, TU Dortmund University will then take charge in releasing or mailing the diploma to students.<br><br>
+                                                         Keep in mind that while these processes are done by the Office of the College Secretary on the students’ behalf, it is strongly recommended that students are knowledgeable of the process. The School can only extend its services insofar as processing your requirements; the School remains subject to university process timelines, guidelines, and requirements. As such, the School does not have the power to expedite, fast-track, or extend the processing of documents.</ul>
+                                                    </li>
+                                                </ol>
+                                                
+                                            </ul>
+                                            
+                                        </div>
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="process2-pane" class="tab-pane fade">
+                
+                <span id="about-title" class="tab-pane-title" style="color: #639a00">MSRDP Academics</span>
+                <hr>
+                <div class="container" style="width: 100%">
+                    <div class="row">
+                        <div role="tabpanel">
+                            <div class="col-sm-3">
+                                <ul class="nav nav-pills brand-pills nav-stacked" role="tablist" style="color: #000;font-weight: 400;font-size: 1vw;text-align: justify;padding: 0.6vw;">
+                                    <li role="presentation" class="brand-nav active"><a href="#tab5" aria-controls="tab" role="tab" data-toggle="tab" style="text-align: left;">Curriculum</a></li>
+                                    <li role="presentation" class="brand-nav"><a href="#tab6" aria-controls="tab" role="tab" data-toggle="tab" style="text-align: left">Thesis Requirements</a></li>
+                                    <li role="presentation" class="brand-nav"><a href="#tab7" aria-controls="tab" role="tab" data-toggle="tab" style="text-align: left">Thesis Milestones</a></li>
+                                    <li role="presentation" class="brand-nav"><a href="#tab8" aria-controls="tab" role="tab" data-toggle="tab" style="text-align: left">School Research Forum (SRF)</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-sm-9">
+                                <div class="tab-content">
+                                    
+                                    <div role="tabpanel" class="tab-pane active" id="tab5">
+                                        <div class="vision-text">
+                                            <strong>Plan of Study</strong><br><br>
+                                           <table>
+                                                <tr>
+                                                   <th colspan="4" class="title"> <center><b>Year 2 at UP SURP</b></center></th>
+                                                </tr>
+
+                                                <tr class="header">
+                                                    <th>
+                                                        First Semester
+                                                        <small>August-December</small>
+                                                    </th>
+                                                    <th>Units</th>
+                                                    <th>
+                                                        Second Semester
+                                                        <small>January-May</small>
+                                                    </th>
+                                                    <th>Units</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="subject">
+                                                        Plan 203
+                                                        <span class="description">Land Use Planning</span>
+                                                    </td>
+                                                    <td class="units">3</td>
+                                                    <td class="subject">
+                                                        Plan 210.1
+                                                        <span class="description">Planning Workshop</span>
+                                                    </td>
+                                                    <td class="units">5</td>
+                                                </tr>
+
+                                                <tr class="alternate">
+                                                    <td class="subject">
+                                                        Plan 210
+                                                        <span class="description">Planning Process</span>
+                                                    </td>
+                                                    <td class="units">3</td>
+                                                    <td class="subject">
+                                                        Plan 229
+                                                        <span class="description">
+                                                            Special Problems in Regional Planning
+                                                        </span>
+                                                    </td>
+                                                    <td class="units">3</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="subject">
+                                                        Plan 214
+                                                        <span class="description">
+                                                            Planning Analysis and Techniques
+                                                        </span>
+                                                    </td>
+                                                    <td class="units">3</td>
+                                                    <td class="subject">
+                                                        Plan 300
+                                                        <span class="description">Master's Thesis</span>
+                                                    </td>
+                                                    <td class="units">6</td>
+                                                </tr>
+
+                                                <tr class="alternate">
+                                                    <td class="subject">
+                                                        Plan 219
+                                                        <span class="description">
+                                                            Special Problems in Urban Planning
+                                                        </span>
+                                                    </td>
+                                                    <td class="units">3</td>
+                                                    <td rowspan="2" colspan="2"></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="subject">
+                                                        Plan 299
+                                                        <span class="description">
+                                                            Research Methods in Planning
+                                                        </span>
+                                                    </td>
+                                                    <td class="units">3</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="total"><b>Total Number of Units</b></td>
+                                                    <td class="total-units"><b>15</b></td>
+                                                    <td class="total"><b>Total Number of Units</b></td>
+                                                    <td class="total-units"><b>14</b></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div> 
+                                    
+                                    <div role="tabpanel" class="tab-pane" id="tab6">
+                                        <div class="vision-text">
+                                            <strong>Plan 300: Master’s Thesis Requirements</strong><br><br>
+                                            There are nine (9) thesis forms which signify the various stages of the student’s progress. The conduct of the thesis, including the implementation of thesis forms, is based on the 2003 and 2017 versions of the University of the Philippines Diliman Faculty Manual and has been adapted to align with the context and academic requirements of SURP. Further revisions or additional updates of the Faculty Manual may be accessed through the Office of the Vice Chancellor for Academic Affairs website: https://ovcaa.upd.edu.ph/resources/faculty/<br><br>
+                                            <ul>
+                                                <li>Plan 300 and Residence Enrollment Requirements<br>
+                                                    <ul>
+                                                        Students who wish to enroll for Plan 300 must first submit a concept paper as part of their registration requirements. Those who wish to enroll in residence every semester thereafter must submit a proof of substantial progress to their adviser and the Office of the College Secretary (OCS). Substantial progress may include updates on their milestone achievements, such as preliminary data gathering process and revisions according to the matrix of comments from the panel.
+                                                    </ul>
+                                                </li><br>
+                                                <li>Communications Protocol for Thesis Forms and Manuscript Submission<br>
+                                                    <ul>
+                                                        Students and the faculty must include the OCS email address (surp.ogs.upd@up.edu.ph) for every form submission and key milestone correspondence for academic progress monitoring. The OCS will consider only up to three (3) email threads per student. When including the OCS in the correspondence, the email subject must strictly follow the format:<br><br>
+                                                        <ul>
+                                                            <li>[Student Last Name, First Name] Thesis Forms Submission Thread</li>
+                                                            <li>[Student Last Name, First Name] Manuscript Format Review Thread</li>
+                                                            <li>[Student Last Name, First Name] Milestone Correspondence Thread</li>
+                                                        </ul>
+                                                    </ul><br>
+                                                   Requests or submissions made outside the prescribed threads will not be entertained or considered valid.
+                                                </li>
+                                                
+                                            </ul>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div role="tabpanel" class="tab-pane" id="tab7">
+                                        <div class="vision-text">
+                                           There are nine (9) thesis forms which signify the various stages of the student’s progress. For detailed information, requirements, and processes for each thesis form, please see <a href="https://drive.google.com/drive/folders/1TqfVwgbCvwa83ppR3UcbnnSkmSHncO-i" target="_blank" class="active">MSRDP Thesis Manual</a>.<br><br>
+                                            
+                                            <table>
+                                                <tr>
+                                                    <th><strong>Form</strong></th>
+                                                    <th><strong>Requirements</strong></th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><b>Form 1</b><br>Request for Assignment of Adviser</td>
+                                                    <td>Concept Note<br>
+                                                        <ol>
+                                                            <li>Introduction</li>
+                                                            <li>Background of the Study</li>
+                                                            <li>Statement of the Problem</li>
+                                                            <li>Research Questions and Research Objectives</li>
+                                                            <li>Significance of the Study</li>
+                                                            <li>Scope and Delimitation</li>
+                                                            <li>Preliminary Frameworks<br>
+                                                                <ul>
+                                                                    <li>Theoretical</li>
+                                                                    <li>Conceptual</li>
+                                                                    <li>Operational</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Review of Related Literature and Policies Summary</li>
+                                                            <li>Methodology<br>
+                                                                <ul>
+                                                                    <li>Research Design</li>
+                                                                    <li>Data Collection</li>
+                                                                    <li>Data Analysis</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>References</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><b>Form 2</b><br>Appointment of Thesis Committee</td>
+                                                    <td>Detailed thesis proposal<br><br>
+                                                            The thesis proposal must follow the outline:<br><br>
+                                                        <ol>
+                                                            <li>Introduction<br>
+                                                                <ul>
+                                                                    <li>Background</li>
+                                                                    <li>Statement of the Problem</li>
+                                                                    <li>Research Questions and Objectives of the Study</li>
+                                                                    <li>Scope and Limitations</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Review of Related Literature and Policies</li>
+                                                            <li>Research Design<br>
+                                                                <ul>
+                                                                    <li>Theoretical, Conceptual, and Operational Frameworks</li>
+                                                                    <li>Research Methodology</li>
+                                                                    <li>Research Instruments</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Description of Study Area</li>
+                                                            <li>Progress Timeline/GANTT Chart</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><b>Form 3</b><br>Approval of Thesis Proposal</td>
+                                                    <td>Thesis Proposal Presentation<br><br>Updated proposal with matrix of comments and actions taken.</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><b>Form 4</b><br>Adviser's Endorsement for Presentation to the SRF</td>
+                                                    <td>Manuscript submitted to OCS at least one (1) week before the scheduled SRF.<br><br>
+                                                            Students presenting in the SRF must follow this outline:<br><br>
+                                                        <ol>
+                                                            <li>Introduction<br>
+                                                                <ul>
+                                                                    <li>Background</li>
+                                                                    <li>Statement of the Problem</li>
+                                                                    <li>Research Questions and Objectives of the Study</li>
+                                                                    <li>Scope and Limitations</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Research Design<br>
+                                                                <ul>
+                                                                    <li>Theoretical, Conceptual, and Operational Frameworks</li>
+                                                                    <li>Research Methodology</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Description of Study Area</li>
+                                                            <li>Preliminary Results or Findings</li>
+                                                            <li>Preliminary Conclusion and Recommendation</li>
+                                                        </ol>
+                                                        Prescribed presentation templates may be accessed through the <a href="https://drive.google.com/drive/folders/1TqfVwgbCvwa83ppR3UcbnnSkmSHncO-i" target="_blank" class="active">MSRDP Thesis Manual</a>.
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><b>Form 5</b><br>Certification of Presentation in the SRF</td>
+                                                    <td>Presentation in the SRF.<br><br>
+                                                    Revised manuscript according to SRF comments submitted to each oral defense panel member at least two (2) weeks prior to the scheduled date.</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><b>Form 6</b><br>Endorsement for Thesis Oral Defense</td>
+                                                    <td>None</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><b>Form 7</b><br>Constitution of Thesis Oral Defense Panel</td>
+                                                    <td>None</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><b>Form 8</b><br>Thesis Oral Defense Report</td>
+                                                    <td>Submission of editor curriculum vitae for OCS clearance and notice to proceed.<br><br>
+                                                    Certification of Language Editing, Copy Editing, and Proofreading<br><br>
+                                                    Manuscript formatted in accordance with <a href="https://drive.google.com/drive/folders/1TqfVwgbCvwa83ppR3UcbnnSkmSHncO-i" target="_blank" class="active">MSRDP Thesis Manual standards</a>.</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><b>Form 9</b><br>Committee's Endorsement for Approval and Final Printing of the Thesis</td>
+                                                    <td>Final formatted manuscript cleared by the OCS, endorsed by the College Secretary, and approved by the Dean for printing five (5) hardbound copies.</td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                    </div> 
+                                    
+                                    <div role="tabpanel" class="tab-pane" id="tab8">
+                                        <div class="vision-text">
+                                            The SRF is a public forum that serves as the venue for students to present the preliminary findings of their thesis/dissertation. It also provides an opportunity to gather comments and suggestions from the faculty lecturers, practitioners, and students prior to the oral defense.<br><br>
+                                            The SRF is conducted during midsemester (March and October).<br><br>
+                                            For more information regarding the conduct of the SRF, please see <a href="https://drive.google.com/drive/folders/1TqfVwgbCvwa83ppR3UcbnnSkmSHncO-i" target="_blank" class="active">MSRDP Thesis Manual </a>.   
+                                        </div>
+                                    </div> 
+                    
+                                    
+        
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+            
+            <div id="student-pane" class="tab-pane fade">
+                <span id="about-title" class="tab-pane-title" style="color: #639a00">International Student Survival and Campus Life</span>
+                <hr>
+                
+               
+                <div class="container" style="width: 100%">
+                    <div class="row">
+                        <div role="tabpanel">
+                            <div class="col-sm-3">
+                                <ul class="nav nav-pills brand-pills nav-stacked" role="tablist" style="color: #000;font-weight: 400;font-size: 1vw;text-align: justify;padding: 0.6vw;">
+                                    <li role="presentation" class="brand-nav active"><a href="#tab9" aria-controls="tab" role="tab" data-toggle="tab" style="text-align: left;">Accommodation</a></li>
+                                    <li role="presentation" class="brand-nav"><a href="#tab10" aria-controls="tab" role="tab" data-toggle="tab" style="text-align: left">Transportation and Mobility</a></li>
+                                    <li role="presentation" class="brand-nav"><a href="#tab11" aria-controls="tab" role="tab" data-toggle="tab" style="text-align: left">Food and Lifestyle Establishments</a></li>
+                                     <li role="presentation" class="brand-nav"><a href="#tab12" aria-controls="tab" role="tab" data-toggle="tab" style="text-align: left">Filipino Survival Guide</a></li>
+                                    <li role="presentation" class="brand-nav"><a href="#tab13" aria-controls="tab" role="tab" data-toggle="tab" style="text-align: left">UP SURP Events</a></li>
+                                    <li role="presentation" class="brand-nav"><a href="#tab14" aria-controls="tab" role="tab" data-toggle="tab" style="text-align: left">Psychosocial Support Services</a></li>
+                                    <li role="presentation" class="brand-nav"><a href="#tab15" aria-controls="tab" role="tab" data-toggle="tab" style="text-align: left">Health, Safety, and Lifeline Hotlines</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-sm-9">
+                                <div class="tab-content">
+                                    
+                                    <div role="tabpanel" class="tab-pane active" id="tab9">
+                                        <div class="vision-text">
+                                            <strong style="color: #639a00">Daily Life and Campus Mobility</strong><br><br>
+                                            <b>On-Campus Housing</b><br><br>
+                                            The university has two main dormitories accepting foreign students: the Acacia Residence Hall and the UP International Center. You may visit the Office of Student Housing (https://studenthousing.upd.edu.ph/) to learn more about the application process and guidelines.<br><br>
+                                            Should you wish to avail of on-campus housing, please let the Office of the College Secretary (OCS) know within the prescribed application period of application for these housing facilities for proper facilitation and coordination with relevant student-housing offices<br><br>
+                                            <b>Off-Campus Housing</b><br><br>
+                                            There are several areas around UP Diliman offering student accommodation. You may join the Facebook groups offering rental units in the following areas:
+                                            <ul><br>
+                                                <li>Brgy. Krus Na Ligas</li>
+                                                <li>Brgy. UP Campus</li>
+                                                <li>Brgy. Teacher’s Village East</li>
+                                                <li>Brgy. Teacher’s Village West</li>
+                                                <li>Katipunan Avenue</li>
+                                                <li>Commonwealth Avenue</li>
+                                                <li>Timog Avenue</li>
+                                            </ul><br>
+                                            Should you wish to avail of off-campus housing, please closely coordinate with the Office of the College Secretary (OCS) or any trusted friend/acquaintance who is familiar with the Philippines to ensure that your transaction with your potential accommodations is legitimate and reliable.
+
+                                        </div>
+                                    </div> 
+                    
+                                    <div role="tabpanel" class="tab-pane" id="tab10">
+                                        <div class="vision-text">
+                                            <strong style="color: #639a00">Daily Life and Campus Mobility</strong><br><br>
+                                            Navigating the 490-hectare campus of UP Diliman and connecting to the broader Metro Manila region is an integral part of daily student life. The campus is well-integrated into public transit systems, offering options that range from internal campus jeepneys to regional light rail lines and ride-hailing applications.<br><br>
+                                            <b>On-Campus Transportation</b><br><br>
+                                            While walking under the campus's famous shade trees remains the preferred mode of travel for most students, the university relies heavily on its internal Jeepney Network. Route designations are visually color-coded on the roofs of the vehicles to help passengers quickly identify their destination.<br><br>
+                                            <b>Campus Jeepney Color Coding & Routes</b><br><br>
+                                            
+                                            <table>
+                                                <tr>
+                                                    <th>Route</th>
+                                                    <th>Roof / Body Indicators</th>
+                                                    <th>Key Service Area &amp; Direction</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Ikot</td>
+                                                    <td>Yellow Roof</td>
+                                                    <td>
+                                                        Loops continuously counterclockwise within
+                                                        the campus academic oval and residential areas.
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Toki</td>
+                                                    <td>Yellow Roof with Red Edges</td>
+                                                    <td>
+                                                        Loops clockwise around the campus academic
+                                                        loop and peripheral colleges.
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Philcoa</td>
+                                                    <td>Pure Green or Green with Yellow Edges</td>
+                                                    <td>
+                                                        Connects the central campus to Philcoa
+                                                        and Commonwealth Avenue.
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Katipunan</td>
+                                                    <td>Red Roof</td>
+                                                    <td>
+                                                        Connects the campus to Katipunan Avenue
+                                                        (LRT-2 station, UP Town Center, Ateneo de Manila).
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>SM North</td>
+                                                    <td>Green Roof with White Edges</td>
+                                                    <td>
+                                                        Connects campus directly to SM City North
+                                                        EDSA and TriNoma transit hubs.
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Pantranco / Quezon Ave.</td>
+                                                    <td>Pure Green or Pure Blue</td>
+                                                    <td>
+                                                        Runs between the campus and Quezon Avenue /
+                                                        West Avenue commercial corridors.
+                                                    </td>
+                                                </tr>
+
+                                            </table><br><br>
+                                            <i>Student Commuter Tip: Always keep small cash denominations (Php 1, Php 5, Php 10, or Php 20 coins) ready when riding jeepneys. Presenting a valid UP Student ID entitles you to a 20% student discount on traditional and modern jeepney fares.</i><br><br>
+                                            <b>Modal Breakdown & Transit Options</b><br><br>
+                                            <ol>
+                                                <li>Traditional & Modern Jeepneys<br>
+                                                    <ul>
+                                                        <li>Traditional Jeepneys: Iconic open-air vehicles operating fixed routes. Pay cash directly to the driver or pass your fare down through fellow passengers ("Pakiabot po", “Pakisuyo po”, “Bayad po”).</li>
+                                                        <li>Modern / Electric Jeepneys (e-Jeeps): Air-conditioned, higher-capacity vehicles serving select routes entering and exiting campus. Fares are slightly higher than traditional jeepneys but often has added air-conditioning for improved comfort.</li>
+                                                    </ul>
+                                                </li><br>
+                                                <li>Ride-Hailing Applications (TNVS)<br>
+                                                    <ul>
+                                                        <li>Grab, Indrive, & JoyRide Car: Transport Network Vehicle Services (TNVS) operate heavily around Quezon City. These app-based rides offer safe, direct, door-to-door trips to specific buildings or dormitories, which are especially useful when carrying heavy luggage or returning late at night.</li>
+                                                        <li>Motorcycle Taxis: Services like Angkas, JoyRide, and Move It offer rapid solo commutes through Metro Manila traffic via smartphone apps.</li>
+                                                        <li>Lalamove, GrabExpress, Angkas Padala, Move It: App-based courier services let you rapidly send your package/parcel to locations within Metro Manila.</li>
+                                                    </ul>
+                                                </li><br>
+                                                <li>Metered Street Taxis<br>
+                                                    <ul>
+                                                        <li>White metered taxis can be flagged down along major perimeter roads (Commonwealth Avenue, Katipunan Avenue, and CP Garcia Avenue).</li>
+                                                        <li>Ensure the driver turns on the flag down meter before departing. Taxis generally do not cruise inside the quiet inner academic roads, so setting a pickup near main roads or using a ride-hailing app is recommended.</li>
+                                                    </ul>
+                                                </li><br>
+                                                <li>Rail Transits<br>
+                                                    Commuting to the neighboring cities in the broader national capital region is made easy via nearby light rail stations:<br>
+                                                    <ul>
+                                                        <li>Light Rail Transit (LRT) Line 2 - Katipunan Station: Accessible via the Katipunan Jeepney. Connects east-west from Antipolo to Manila (Recto).</li>
+                                                        <li>Metro Rail Transit (MRT) Line 3 - North Avenue / Quezon Avenue Stations: Accessible via SM North or Quezon Ave Jeepneys. Connects north-south along the central EDSA highway corridor (Cubao, Makati, Pasay).</li>
+                                                    </ul>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div> 
+        
+                                    <div role="tabpanel" class="tab-pane" id="tab11">
+                                        <div class="vision-text">
+                                            <strong style="color: #639a00">Daily Life and Campus Mobility</strong><br><br>
+                                            The campus hosts several food hubs and is located near several retail and shopping malls.<br><br>
+                                            UP Diliman Shopping Center – Several notable establishments include Robinsons Easymart for groceries, Power Mac for Apple products, Handyman for hardware and general merchandise, SouthStar Drug for pharmaceutical needs, and Food Court for dining out. Budget: Php 200 and up.<br><br>
+                                            GyudFood – Several food stands and kiosks are available here. Meal prices start at Php 100.<br><br>
+                                            Area 2 (J.P. Laurel St.) – Every broke UP student have indulged in budget-friendly meals ranging from carinderias with homecooked dishes to quaint cafes. The street is lined with food stands and hole-in-the-wall eateries which have been part of many students’ UP journey.<br><br>
+                                            Epsilon Chi Center – Houses one of UP’s homegrown favorite silog place, Rodic’s, which is famous for its tapsilog (a portmanteau for tapa (davory marinated beef), sinangang (fried rice), and itlog (egg)). Other establishments here include Nomu (pizzas and coffee) and 7-eleven.<br><br>
+                                            Maginhawa St. – This mixed-use area is lined with different shops, cafes, and restaurants. Top picks would be Provenciano and Mr. Jeepney for anyone looking for Filipino food, Mugen (Japanese), Yongmart for Korean grocery needs, Anytime Fitness for your body goals, and many more. While you are here, you may also check the adjacent streets: Malingap and Magiting, which also have hidden gems scattered throughout. Maginhawa is also parallel to Kalayaan Avenue which also houses many food and financial establishments.<br><br>
+                                            Kiosks – You will see plenty of small kiosks around UP, especially those around the Academic Oval. These kiosks sell the typical broke UP student’s favorite street foods such as kwek-kwek, fish ball, kikiam, and instant noodles. It is public knowledge that pancit canton (instant noodles) in UP beats the one you cook at home.<br><br>
+                                            UP Town Center – On UP land, on the other side of Katipunan Avenue, is UP Town Center. It is the closest mall to the campus that offers basic student needs such as food, groceries, and supplies. Prices here tend to be on the steeper side.
+                                        </div>
+                                    </div>
+                                    
+                                    <div role="tabpanel" class="tab-pane" id="tab12">
+                                        <div class="vision-text">
+                                            <strong style="color: #639a00">Socialization and Support Systems</strong><br><br>
+                                            <b>Greetings and Polite Expressions</b><br><br>
+                                            <table>
+                                                <tr>
+                                                    <th>Filipino</th>
+                                                    <th>English</th>
+                                                    <th>Common Use / Context</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Magandang umaga po!</td>
+                                                    <td>Good morning!</td>
+                                                    <td>Greeting</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Magandang tanghali po!</td>
+                                                    <td>Good noon!</td>
+                                                    <td>Greeting around noon</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Magandang hapon po!</td>
+                                                    <td>Good afternoon!</td>
+                                                    <td>Greeting</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Magandang gabi po!</td>
+                                                    <td>Good evening!</td>
+                                                    <td>Greeting</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Hello, kamusta po kayo?</td>
+                                                    <td>Hello, how are you?</td>
+                                                    <td>Greeting</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Salamat po!</td>
+                                                    <td>Thank you!</td>
+                                                    <td>Expressing thanks</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Walang anuman po!</td>
+                                                    <td>You're welcome!</td>
+                                                    <td>Reply to "Salamat po!"</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Sorry po, pasensya na po!</td>
+                                                    <td>Sorry, please bear with me.</td>
+                                                    <td>Apologizing / asking for patience</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Opo.</td>
+                                                    <td>Yes.</td>
+                                                    <td>Respectful response</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Hindi po.</td>
+                                                    <td>No.</td>
+                                                    <td>Respectful response</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Sige po.</td>
+                                                    <td>Okay / Sure.</td>
+                                                    <td>Agreeing / acknowledging</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Pwede po ba?</td>
+                                                    <td>Is it okay? / May I?</td>
+                                                    <td>Asking permission</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Hindi po pwede.</td>
+                                                    <td>It's not allowed. / You can't.</td>
+                                                    <td>Refusing / explaining a restriction</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Pwede po.</td>
+                                                    <td>It's allowed. / Sure.</td>
+                                                    <td>Giving permission</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Sandali lang po.</td>
+                                                    <td>Just a moment, please.</td>
+                                                    <td>Asking someone to wait</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Teka lang po.</td>
+                                                    <td>Please wait a moment.</td>
+                                                    <td>Asking someone to wait</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Ingat po!</td>
+                                                    <td>Take care!</td>
+                                                    <td>Saying goodbye</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Paalam po!</td>
+                                                    <td>Goodbye!</td>
+                                                    <td>Saying goodbye</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td colspan="3" class="note">
+                                                        <b>Note:</b> "Po" and "opo" are honorifics commonly added
+                                                        to speech or sentences that show Filipinos' core values
+                                                        of respect and humility. Taught at a young age, many
+                                                        Filipinos automatically incorporate these words into
+                                                        their everyday speech as part of habit.
+                                                    </td>
+                                                </tr>
+
+                                            </table><br><br>
+                                            <b>Addressing People</b><br><br>
+                                            <table>
+                                                <tr>
+                                                <th>Filipino</th>
+                                                <th>English / Meaning</th>
+                                                <th>Common Use / Context</th>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Ate</td>
+                                                <td>Older sister / Miss</td>
+                                                <td>Female older than you; commonly used when addressing an older woman</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Kuya</td>
+                                                <td>Older brother / Sir</td>
+                                                <td>Male older than you; commonly used when addressing an older man</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Tatay / 'Tay</td>
+                                                <td>Father / Dad</td>
+                                                <td>Father; sometimes used affectionately for an older man</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Nanay / 'Nay</td>
+                                                <td>Mother / Mom</td>
+                                                <td>Mother; sometimes used affectionately for an older woman</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Tito</td>
+                                                <td>Uncle</td>
+                                                <td>Also sometimes used for an older man</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Tita</td>
+                                                <td>Aunt</td>
+                                                <td>Also sometimes used for an older woman</td>
+                                            </tr>
+
+                                                <tr>
+                                                    <td>Manong</td>
+                                                    <td>Older brother / older male</td>
+                                                    <td>Respectful term, especially in some regions</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Manang</td>
+                                                    <td>Older sister / older female</td>
+                                                    <td>Respectful term, especially in some regions</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Lolo</td>
+                                                    <td>Grandfather</td>
+                                                    <td>Also used affectionately for an elderly man</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Lola</td>
+                                                    <td>Grandmother</td>
+                                                    <td>Also used affectionately for an elderly woman</td>
+                                                </tr>
+                                            </table><br><br>
+                                            
+                                            <b>Basic Pronouns</b><br><br>
+                                            <table>
+                                                <tr>
+                                                    <th>Filipino</th>
+                                                    <th>English</th>
+                                                    <th>Possessive Form</th>
+                                                    <th>English</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Ako</td>
+                                                    <td>I / Me</td>
+                                                    <td>Akin</td>
+                                                    <td>Mine</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Ikaw</td>
+                                                    <td>You</td>
+                                                    <td>Iyo</td>
+                                                    <td>Yours</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Siya</td>
+                                                    <td>He / She</td>
+                                                    <td>Kanya</td>
+                                                    <td>His / Hers</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Kami</td>
+                                                    <td>We / Us – excluding the person being spoken to</td>
+                                                    <td>Amin</td>
+                                                    <td>Ours – excluding the person being spoken to</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Tayo</td>
+                                                    <td>We / Us – including the person being spoken to</td>
+                                                    <td>Atin</td>
+                                                    <td>Ours – including the person being spoken to</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Kayo</td>
+                                                    <td>You – plural or respectful singular</td>
+                                                    <td>Inyo</td>
+                                                    <td>Yours – plural or respectful</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Sila</td>
+                                                    <td>They / Them</td>
+                                                    <td>Kanila</td>
+                                                    <td>Theirs</td>
+                                                </tr>
+                                            </table><br><br>
+                                            
+                                            <b>Numbers</b><br><br>
+                                            <table>
+                                                <tr>
+                                                    <th>Filipino</th>
+                                                    <th>Number</th>
+                                                    <th>Filipino</th>
+                                                    <th>Number</th>
+                                                    <th>Filipino</th>
+                                                    <th>Number</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Isa</td>
+                                                    <td>1</td>
+                                                    <td>Labing-isa</td>
+                                                    <td>11</td>
+                                                    <td>Tatlumpu</td>
+                                                    <td>30</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Dalawa</td>
+                                                    <td>2</td>
+                                                    <td>Labindalawa</td>
+                                                    <td>12</td>
+                                                    <td>Apatnapu</td>
+                                                    <td>40</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Tatlo</td>
+                                                    <td>3</td>
+                                                    <td>Labintatlo</td>
+                                                    <td>13</td>
+                                                    <td>Limampu</td>
+                                                    <td>50</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Apat</td>
+                                                    <td>4</td>
+                                                    <td>Labing-apat</td>
+                                                    <td>14</td>
+                                                    <td>Animnapu</td>
+                                                    <td>60</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Lima</td>
+                                                    <td>5</td>
+                                                    <td>Labinlima</td>
+                                                    <td>15</td>
+                                                    <td>Pitumpu</td>
+                                                    <td>70</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Anim</td>
+                                                    <td>6</td>
+                                                    <td>Labing-anim</td>
+                                                    <td>16</td>
+                                                    <td>Walumpu</td>
+                                                    <td>80</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Pito</td>
+                                                    <td>7</td>
+                                                    <td>Labimpito</td>
+                                                    <td>17</td>
+                                                    <td>Siyamnapu</td>
+                                                    <td>90</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Walo</td>
+                                                    <td>8</td>
+                                                    <td>Labingwalo</td>
+                                                    <td>18</td>
+                                                    <td>Daan</td>
+                                                    <td>Hundred</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Siyam</td>
+                                                    <td>9</td>
+                                                    <td>Labinsiyam</td>
+                                                    <td>19</td>
+                                                    <td>Libo</td>
+                                                    <td>Thousand</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Sampu</td>
+                                                    <td>10</td>
+                                                    <td>Dalawampu</td>
+                                                    <td>20</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </table><br><br>
+                                            
+                                            <b>Philippine Currency</b><br><br>
+                                            <table>
+                                                <tr>
+                                                    <th>Filipino</th>
+                                                    <th>Amount</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Piso</td>
+                                                    <td>PhP 1</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Lima / Singko</td>
+                                                    <td>PhP 5</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Sampu</td>
+                                                    <td>PhP 10</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Bente</td>
+                                                    <td>PhP 20</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Singkwenta</td>
+                                                    <td>PhP 50</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Sandaan</td>
+                                                    <td>PhP 100</td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>Limangdaan</td>
+                                                    <td>PhP 500</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Isang libo</td>
+                                                    <td>PhP 1,000</td>
+                                                </tr>
+                                            </table><br><br>
+                                            
+                                           <table>
+                                                <tr>
+                                                    <th>Filipino</th>
+                                                    <th>Time</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Ala una</td>
+                                                    <td>1:00</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Alas dos</td>
+                                                    <td>2:00</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Alas tres</td>
+                                                    <td>3:00</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Alas kuwatro</td>
+                                                    <td>4:00</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Alas singko</td>
+                                                    <td>5:00</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Alas sais</td>
+                                                    <td>6:00</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Alas siyete</td>
+                                                    <td>7:00</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Alas otso</td>
+                                                    <td>8:00</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Alas nuwebe</td>
+                                                    <td>9:00</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Alas diyes</td>
+                                                    <td>10:00</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Alas onse</td>
+                                                    <td>11:00</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Alas dose</td>
+                                                    <td>12:00</td>
+                                                </tr>
+
+                                            </table> <br><br>
+                                            
+                                            <table>
+                                                <tr>
+                                                    <th class="first">Filipino</th>
+                                                    <th class="second">English</th>
+                                                    <th class="third">Example</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>ng umaga (n.u.)</td>
+                                                    <td>in the morning</td>
+                                                    <td>Alas otso ng umaga – 8:00 AM</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>ng tanghali (n.t.)</td>
+                                                    <td>at noon</td>
+                                                    <td>Alas dose ng tanghali – 12:00 noon</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>ng hapon (n.h.)</td>
+                                                    <td>in the afternoon</td>
+                                                    <td>Alas tres ng hapon – 3:00 PM</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>ng gabi (n.g.)</td>
+                                                    <td>in the evening / at night</td>
+                                                    <td>Alas siyete ng gabi – 7:00 PM</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>hatinggabi</td>
+                                                    <td>midnight</td>
+                                                    <td>Alas dose ng hatinggabi – 12:00 midnight</td>
+                                                </tr>
+                                            </table><br><br>
+
+                                        
+                                            
+                                            <table>
+                                                <tr>
+                                                    <th>Filipino</th>
+                                                    <th>English</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Kanan</td>
+                                                    <td>Right</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Kaliwa</td>
+                                                    <td>Left</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Diretso</td>
+                                                    <td>Straight</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Liko</td>
+                                                    <td>Turn</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Kumanan</td>
+                                                    <td>Turn right</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Kumaliwa</td>
+                                                    <td>Turn left</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Dumiretso</td>
+                                                    <td>Keep straight</td>
+                                                </tr>
+                                            </table><br><br>
+                                            
+                                            <table>
+                                                <tr>
+                                                    <th>Filipino</th>
+                                                    <th>English</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Saan po ang ___?</td>
+                                                    <td>Where is the ___?</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Paano po pumunta sa ___?</td>
+                                                    <td>How do I get to ___?</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Malapit lang po ba ang ___?</td>
+                                                    <td>Is ___ nearby?</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Malayo po ba?</td>
+                                                    <td>Is it far?</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Nasaan po ang CR?</td>
+                                                    <td>Where is the restroom?</td>
+                                                </tr>
+                                            </table><br><br>
+                                            
+                                            <table>
+                                                <tr>
+                                                    <th>Filipino</th>
+                                                    <th>English</th>
+                                                    <th>Common Use / Context</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Para po.</td>
+                                                    <td>Stop here, please.</td>
+                                                    <td>Commonly used when getting off a jeepney</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Dito na lang po.</td>
+                                                    <td>Here, please. / This is my stop.</td>
+                                                    <td>Asking to stop here</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Sa tabi na lang po.</td>
+                                                    <td>By the side, please.</td>
+                                                    <td>Asking to stop at the side</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Saan po ako bababa?</td>
+                                                    <td>Where should I get off?</td>
+                                                    <td>Asking where to get off</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Magkano po ang pamasahe?</td>
+                                                    <td>How much is the fare?</td>
+                                                    <td>Asking transportation fare</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Pakiabot po.</td>
+                                                    <td>Please pass this to me.</td>
+                                                    <td>Asking someone to pass something</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Pakisuyo po.</td>
+                                                    <td>Please / Could you please do me a favor?</td>
+                                                    <td>Polite request</td>
+                                                </tr>
+                                            </table><br><br>
+
+                                            <table>
+                                                <tr>
+                                                    <th>Filipino</th>
+                                                    <th>English</th>
+                                                    <th>Common Use / Context</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Magkano po ito?</td>
+                                                    <td>How much is this?</td>
+                                                    <td>Asking the price of something nearby</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Magkano po iyan?</td>
+                                                    <td>How much is that?</td>
+                                                    <td>Asking the price of something farther away</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Ito po.</td>
+                                                    <td>This one, please.</td>
+                                                    <td>Selecting an item</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Iyan po.</td>
+                                                    <td>That one, please.</td>
+                                                    <td>Selecting an item</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Gusto ko po ito.</td>
+                                                    <td>I would like this one.</td>
+                                                    <td>Selecting an item</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Pabili po.</td>
+                                                    <td>I'd like to buy this, please.</td>
+                                                    <td>Common when buying from a small store</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>May iba pa po?</td>
+                                                    <td>Do you have other options?</td>
+                                                    <td>Asking for alternatives</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>May mas mura pa po?</td>
+                                                    <td>Is there anything cheaper?</td>
+                                                    <td>Asking for a cheaper option</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Puwede po bang tawaran?</td>
+                                                    <td>Can the price be negotiated?</td>
+                                                    <td>Asking if the price is negotiable</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>May sukli po ba?</td>
+                                                    <td>Do you have change?</td>
+                                                    <td>Asking if the seller can give change</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Wala na po?</td>
+                                                    <td>Is there no more?</td>
+                                                    <td>Asking if something is out of stock</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Meron po.</td>
+                                                    <td>Yes, there is. / We have it.</td>
+                                                    <td>Confirming availability</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Wala po.</td>
+                                                    <td>None. / There isn't any.</td>
+                                                    <td>Saying something is unavailable</td>
+                                                </tr>
+                                            </table><br><br>
+                                            
+                                            <table>
+                                                <tr>
+                                                    <th>Filipino</th>
+                                                    <th>English</th>
+                                                    <th>Common Use / Context</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Marunong po ba kayong mag-Ingles?</td>
+                                                    <td>Do you know how to speak in English?</td>
+                                                    <td>Asking if someone speaks English</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Kaunti lang po ang Filipino ko.</td>
+                                                    <td>I only know a little Filipino.</td>
+                                                    <td>Explaining limited Filipino</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Hindi ko po naiintindihan.</td>
+                                                    <td>I don't understand.</td>
+                                                    <td>When you don't understand</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Pwede po pakulit?</td>
+                                                    <td>Please repeat that.</td>
+                                                    <td>Asking someone to repeat</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Dahan-dahan lang po.</td>
+                                                    <td>Please speak slowly.</td>
+                                                    <td>Asking someone to slow down</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Ano po ang ibig sabihin nito?</td>
+                                                    <td>What does this mean?</td>
+                                                    <td>Asking for meaning</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Ano po ito?</td>
+                                                    <td>What is this?</td>
+                                                    <td>Asking about something unfamiliar</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Sino po siya?</td>
+                                                    <td>Who is he/she?</td>
+                                                    <td>Asking who someone is</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Maganda po.</td>
+                                                    <td>It's nice / beautiful.</td>
+                                                    <td>General positive response</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Ayos lang po.</td>
+                                                    <td>It's okay. / No problem.</td>
+                                                    <td>Reassuring someone</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Salamat po sa tulong!</td>
+                                                    <td>Thank you for your help!</td>
+                                                    <td>Expressing gratitude</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Ingat kayo!</td>
+                                                    <td>Take care!</td>
+                                                    <td>Saying goodbye</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Kita tayo!</td>
+                                                    <td>See you!</td>
+                                                    <td>Saying goodbye</td>
+                                                </tr>
+                                            </table>
+
+
+                                            
+                                        </div>
+                                    </div> 
+                                    
+                                    <div role="tabpanel" class="tab-pane" id="tab13">
+                                        <div class="vision-text">
+                                            <strong style="color: #639a00">Socialization and Support Systems</strong><br><br>
+                                          
+                                            PAROLA – Praxis in Academic Research Outputs and Learner Agency is an accelerator program offering seminars, guided workshops, and other activities designed to help master’s and doctorate students explore their research endeavors and achieve their thesis and dissertation milestones.<br><br>
+                                            BALANGAy – Broadening Applied Learning And Networks for Graduate learner Agility is a platform that offers opportunities for complementary learning engagement and transdisciplinary exposure for graduate students.
+                                            
+                                        </div>
+                                    </div> 
+                                    
+                                    <div role="tabpanel" class="tab-pane" id="tab14">
+                                        <div class="vision-text">
+                                            <strong style="color: #639a00">Socialization and Support Systems</strong><br><br>
+                                            
+                                            PsycServ – formally known as UPD Psychological Services is an extension project under the Office of the Chancellor that aims to develop programs and services that address urgent and pressing mental health and psychosocial wellbeing needs of the UPD community at no cost.<br>
+                                            Resource Center: <a href="https://sites.google.com/view/psycservdatabase/home" target="_blank" class="active">https://sites.google.com/view/psycservdatabase/home</a>.<br><br>
+                                            
+                                            Office of Counseling and Guidance – Under the Office of the Vice Chancellor for Student Affairs, OCG provides counselling and psychological assessment to its stakeholders.<br>
+                                            Site: <a href="https://ovcsa.upd.edu.ph/student-services/ocg/" target="_blank" class="active">https://ovcsa.upd.edu.ph/student-services/ocg/</a><br><br>
+                                            
+                                            NowServing – NowServing is a third-party application available in the Philippines. It offers a variety of medical services and has a vast network of physicians from different specializations. Other similar applications are Saya.
+                                          
+                                            
+                                        </div>
+                                    </div> 
+                                    
+                                    <div role="tabpanel" class="tab-pane" id="tab15">
+                                        <div class="vision-text">
+                                            <strong style="color: #639a00">Socialization and Support Systems</strong><br><br>
+                                           
+                                            UP Diliman Health Service<br><br>
+                                            Public Protection and Safety Office
+                                            
+                                        </div>
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
+            
+            </div>
+            
+            <div id="contact-pane" class="tab-pane fade">
+                <div class="vision-text">
+                    <span id="about-title" class="tab-pane-title" style="color: #639a00">Contact Details</span>
+                    <hr>
+                   
+                    <table>
+
+            <!-- SPRING Program Coordinator -->
+            <tr class="program">
+                <td>
+                    SPRING Program<br>
+                    Coordinator
+                </td>
+
+                <td>
+                    Asst. Prof. Mark Anthony M. Gamboa<br>
+                    School of Urban and Regional Planning<br>
+                    University of the Philippines<br>
+                    Email:
+                    <a href="mailto:surp.ogs.upd@up.edu.ph">
+                        surp.ogs.upd@up.edu.ph
+                    </a>
+                </td>
+            </tr>
+
+            <!-- Admissions, Records and Administration -->
+            <tr class="administration">
+                <td>
+                    Admissions, Records,<br>
+                    and Administration
+                </td>
+
+                <td>
+                    Administration<br>
+                    Asst. Prof. Mark Anthony M. Gamboa<br>
+                    College Secretary
+
+                    <br><br>
+
+                    Admissions, Records, and Progress<br>
+                    Ms. Ivy C. Dizon-Hilario<br>
+                    Student Records Evaluator III
+
+                    <br><br>
+
+                    International Linkages - SPRING, DDP(URP)<br>
+                    Ms. Ma. Paula O. Cruz<br>
+                    Junior Research Associate
+
+                    <br><br><br>
+
+                    --- 
+
+                    <br><br>
+
+                    Office of the College Secretary<br>
+                    <a href="mailto:surp.ogs.upd@up.edu.ph">
+                        surp.ogs.upd@up.edu.ph
+                    </a><br>
+                    (02) 8981-8500 loc. 4081
+                </td>
+            </tr>
+
+            <!-- Mailing Address -->
+            <tr class="address">
+                <td>
+                    Mailing Address
+                </td>
+
+                <td>
+                    c/o<br>
+                    Office of the College Secretary<br>
+                    School of Urban and Regional Planning<br>
+                    University of the Philippines<br>
+                    E. Jacinto St., Diliman, Quezon City, 1101
+                </td>
+            </tr>
+
+        </table>
+                                 
+                </div>
+            </div> 
+            
+            </div>
+            
+        </div>
+        
+        
+    </div>
+  
+    
+    <script src="js/script-tools-gad.js"></script>
+    
+</div>
+             
+     
+    
+    </body>
+    
+			
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+            mybutton.style.display = "none";
+            }
+                    }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+                }
+        </script>
+        
+        <!-- Default Statcounter code for UP SURP Website
+        https://www.surp.upd.edu.ph/ -->
+        <script type="text/javascript">
+            var sc_project=12977467; 
+            var sc_invisible=1; 
+            var sc_security="6e50bd91"; 
+        </script>
+        <script type="text/javascript"
+                src="https://www.statcounter.com/counter/counter.js"
+                async></script>
+        <noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12977467/0/6e50bd91/1/" alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+        <!-- End of Statcounter Code -->
+	    	
+        <div id="footer">
+            <!--footer starts from here-->
+            <footer class="footer">
+                <div class="container bottom_border">        
+                    <div class="row">
+                        <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+                            <h5 class="headin5_amrc col_white_amrc1 pt2">Find Us</h5>
+                            <!--headin5_amrc-->
+                            <ul class="footer_ul_amrc3">
+                                <li><a href="https://goo.gl/maps/5ePnWtGdmndKtC7u6" target="_blank"><strong>School of Urban and Regional Planning</strong></a></li>
+                                <li><a href="https://goo.gl/maps/5ePnWtGdmndKtC7u6" target="_blank">E. Jacinto St., Diliman, Quezon City 1101 Philippines</a></li><br>               
+                                <li><p>VoIP</p></li>
+                                <li><p>(632) 8981-8500 &emsp;local 4084 <i>(Office of the Dean)</i></p></li>
+                                <li><p>(632) 8981-8500 &emsp;local 4081 <i>(Office of Graduate Studies | Office of College Secretary)</i></p></li>
+                                <li><p>(632) 8981-8500 &emsp;local 8777 <i>(Office of Training and Extension Services | Office of Research and Publication)</i></p></li>
+                                <li><p>(632) 8981-8500 &emsp;local 4082 <i>(SURP Library)</i></p></li>
+                            </ul>
+
+                            <a href="https://www.foi.gov.ph/requests?status=&category=&search=University+of+the+Philippines+Diliman" target="_blank"><img src="_img/logo-foi.png"  style="width:5vw;height:auto;"></a>&nbsp;
+                            <a href="https://upd.edu.ph/transparency-seal/" target="_blank"><img src="_img/logo-pts.png"  style="width:5vw;height:auto;"></a>&nbsp;
+                            <a href="_img/DPO-DPS.png" target="_blank"><img src="_img/DPO-DPS.png"  style="width:4vw;height:auto;"></a>
+                            <ul class="footer_ul_amrc3">
+                                <li><a href="https://upd.edu.ph/privacy/notice/" target="_blank">Website Privacy Policy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class=" col-sm-4 col-md  col-6 col">
+                            <h5 class="headin5_amrc col_white_amrc2 pt2">Email Us</h5>
+                            <!--headin5_amrc-->
+                            <ul class="footer_ul_amrc1">
+                                <li><p>Office of the Dean - surp.od.upd@up.edu.ph</p></li>
+                                <li><p>Office of the College Secretary - surp.ocs.upd@up.edu.ph</p></li>
+                                <li><p>Office of Graduate Studies - surp.ogs.upd@up.edu.ph</p></li>
+                                <li><p>Office of Training and Extension Services - surptraining.upd@up.edu.ph</p></li>
+                                <li><p>Office of Research and Publications - surporp.upd@up.edu.ph</p></li>
+                                <li><p>SURP Library - surplib.upd@up.edu.ph</p></li>
+                            </ul>
+                                <!--footer_ul_amrc ends here-->
+                        </div>
+
+                        <div class=" col-sm-4 col-md  col-6 col">
+                            <h5 class="headin5_amrc col_white_amrc3 pt2">Linkages</h5>
+                            <!--headin5_amrc-->
+                            <ul class="footer_ul_amrc2" style="font-size: 0.9vw">
+                                <li><a href="https://www.dilg.gov.ph/" target="_blank">Department of the Interior and Local Government</a></li>
+                                <li><a href="#">House Special Committee on Land Use</a></li>
+                                <li><a href="#">DENR - Second Land Administration and Management Project (LAMP2)</a></li>
+                                <li><a href="https://www.tu-dortmund.de/en/" target="_blank">Technische Universitat Dortmund (TUDo) - Germany</a></li>
+                                <li><a href="https://www.rmit.edu.au/" target="_blank">Royal Melbourne Institute of Technology (RMIT) - Australia</a></li>
+                                <li><a href="https://en.seoultech.ac.kr/" target="_blank">Seoul National University of Technology - South Korea</a></li>
+                                <li><a href="https://www.kyushu-u.ac.jp/en/" target="_blank">Kyushu University - Japan</a></li>
+                                <li><a href="https://you.ubc.ca/ubc-life/vancouver/?utm_source=google&utm_medium=cpc&utm_campaign=Nonbranded&utm_content=Nonbranded&utm_source=google&utm_medium=cpc&utm_campaign=Branded&utm_content=Branded&gclid=EAIaIQobChMItsTfpc3D-wIV9JJmAh3SMQ9dEAAYASAAEgKTwvD_BwE" target="_blank">University of British Columbia (UBC) - Canada</a></li>
+                                <li><a href="https://raumplanung.tu-dortmund.de/en/prospective-students/master-spring/?fbclid=IwAR1_ooVsHvqOphqelBlxwaK_0R2wg3VZ67x1IVlZTCzwW2PiZpF0tdU0imQ" target="_blank">TuDo SPRING Network</a></li>
+                                <li><a href="#">UN HABITAT Partner University Network</a></li>
+                                <li><a href="https://www.pssc.org.ph/" target="_blank">Philippine Social Science Council (PSSC)</a></li><br><br><br><br>
+                                <li><a href="https://www.facebook.com/surpinfo" target="_blank"><img src="_img/fb2.png" style="width: 12vw"></a></li>
+                            </ul>
+                            
+                                <!--footer_ul_amrc ends here-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <ul class="foote_bottom_ul_amrc">
+                        <li><a href="https://crs.upd.edu.ph/" target="_blank">CRS</a></li>
+                        <li><a href="https://mail.upd.edu.ph/" target="_blank">Webmail</a></li>
+                        <li><a href="http://ilib.upd.edu.ph/" target="_blank">iLib</a></li>
+                        <li><a href="https://upd.edu.ph/" target="_blank">UP Diliman</a></li>
+                        <li><a href="https://up.edu.ph/" target="_blank">UP System</a></li>
+                    </ul>
+                    <!--foote_bottom_ul_amrc ends here-->
+                </div>
+
+            </footer>
+            <div id="footer-bottom">&nbsp;</div>
+        </div>
+    </body>
+</html>

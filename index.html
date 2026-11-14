@@ -1,0 +1,1119 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, maximum-scale=1">
+        <title>UP School of Urban and Regional Planning</title>
+        <link rel="icon" href="_img/surplogo.png" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script src="js/script.js"></script>
+        <script type="text/javascript" src="js/jquery.plugin.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+
+    <style>
+        .btn-primary {
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #2e6da4;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 0.7vw;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 2px;
+        }
+        
+        a.list-group-item {
+            height:auto;
+            min-height:15vw;
+        }
+        a.list-group-item.active small {
+            color:#fff;
+        }
+        .stars {
+            margin:20px auto 1px;    
+        }
+        
+        /* Popup Modal */
+        .modal-content{
+            background:transparent;
+            border:none;
+            box-shadow:none;
+            text-align:center;
+        }
+
+        /* Fullscreen Modal */
+        .modal.fade .modal-dialog{
+            width:100vw;
+            height:100vh;
+            margin:0;
+            padding:0;
+        }
+
+        .modal-content{
+            width:100%;
+            height:100%;
+            background:rgba(0,0,0,0.95);
+            border:none;
+            border-radius:0;
+            box-shadow:none;
+        }
+
+        .modal-body{
+            width:100%;
+            height:100%;
+            padding:0;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            overflow:hidden;
+        }
+
+        /* Centered image */
+        .modal-body img{
+            max-width:100%;
+            max-height:100%;
+            width:auto;
+            height:auto;
+            object-fit:contain;
+        }
+
+
+        .close{
+            color:#fff;
+            opacity:1;
+            font-size:40px;
+            position:absolute;
+            top:10px;
+            right:25px;
+            z-index:9999;
+        }
+        
+        .event-item {
+            display: none;
+        }
+
+        .list-group-item {
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .pagination-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* UP Maroon Theme */
+        .pagination > .active > a,
+        .pagination > .active > a:hover,
+        .pagination > .active > a:focus {
+            background-color: darkgreen;
+            border-color: black;
+        }
+
+        .pagination > li > a,
+        .pagination > li > span {
+            color: black;
+        }
+
+        .pagination > li > a:hover {
+            color: black;
+        }
+
+        .media-object {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .vision-text {
+            margin-top: 5px;
+        }
+        .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+            z-index: 3;
+            color: #000;
+            cursor: default;
+            background-color: rgba(0, 0, 0, .0001);
+            border-color: rgba(0, 0, 0, .0001);
+}
+    </style>
+
+    <body>  
+        <div id="header">
+            <div id="header-img">
+                <img id="updlogo" src="_img/updlogo.png">
+            </div>
+            
+            <div id="menu-container">
+                <ul id="mainmenu">
+                    <li class="menu-element"><a href="index.html">Home</a></li>
+                    <li class="menu-element"><a href="#">About SURP <i class="arrow down"></i></a>
+                        <ul id="dropdown" style="padding: 0.5vw;-webkit-columns: 2; -moz-columns: 2; columns: 2; list-style-position: inside; left: -15vw">
+                            <li><a href="administration.html">UP SURP Organizational Profile</a></li>
+                             <li><a href="vision%20&%20mission.html">Vision and Mission</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="Major%20Mandate.html">Major Mandate & Functions</a></li>
+                            <li><a href="surp%20committees.html">Administrative and Academic Committees</a></li>
+                            <li><a href="data%20privacy.html">UPD Data Privacy Policy</a></li>
+                            <li><a href="downloads/Code%20of%20Conduct%20and%20Ethical%20Standards.pdf" target="_blank">Code of Conduct and Ethical Standards</a></li>
+                            <li><a href="former-deans.html">Former Deans</a></li>
+                            <li><a href="alumni%20and%20partners.html">Alumni & Development Partners</a></li>
+                            <li><a href="gad%20committee.html">Gender and Development (GAD)</a></li>
+                            <li><a href="SURP%20Complex.html">UP SURP Complex</a></li>
+                            <li><a href="logo.html">School Logo</a></li> 
+                        </ul>
+                    </li>
+                   
+                    <li class="menu-element"><a href="#">Students <i class="arrow down"></i></a>
+                        <ul id="dropdown" style="padding: 0.5vw;-webkit-columns: 2; -moz-columns: 2; columns: 2; list-style-position: inside; left: -10vw">
+                            <li><a href="students.html">Student Corner</a></li>
+                            <li><a href="rules%20and%20policy.html">University Rules & IT Policy</a></li>
+                            <li><a href="academic%20guidelines.html">Academic Process</a></li>
+                            <li><a href="downloads/UPD%20ACAD%20CAL.pdf" target="_blank">UPD Academic Calendar</a></li>
+                        </ul>
+                    </li>    
+                    
+                    <li class="menu-element"><a href="">Business Processes <i class="arrow down"></i></a>
+                        <ul id="dropdown" style="padding: 0.5vw;-webkit-columns: 2; -moz-columns: 2; columns: 2; list-style-position: inside; left: -10vw">
+                            <li><a href="academic%20guidelines.html">Academic Process</a></li>
+                            <li><a href="admin%20process.html">Administrative Process</a></li>
+                            <li><a href="library%20process.html">Library Service Process</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="menu-element"><a href="">Citizen's Charter <i class="arrow down"></i></a>
+                        <ul id="dropdown" style="padding: 0.5vw;-webkit-columns: 1; -moz-columns: 1; columns: 1; list-style-position: inside; left: -3vw">
+                            <li><a href="/downloads/csc/Citizen%20Charter%20UP%20SURP.pdf" target="_blank">UP SURP Citizen's Charter</a></li>
+                            <li><a href="/downloads/SURP%20CSM%20QR.pdf" target="_blank">UP SURP CSM Survey QR Code</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="menu-element"><a href="search.html" class="glyphicon glyphicon-search" role="button"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="announcement-prev">
+         <video width="100%" height="100%" style="outline: 4px solid white; outline-offset: -3px;" loop="true" autoplay muted>
+                <source src="_img/2022-2024%20Highlights%20Reel.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+                Your browser does not support the video tag.
+            </video>
+        </div><br><br><br>
+
+        <center>
+            <div class="cards-wrapper">
+                            
+                <div class="card d-none d-md-block" style="margin: 0 1.1em;">
+                    <a href="ogs.html" class="vision-text" style="text-decoration: none">
+                        <center><img src="_img/ogs_cover.jpg"></center>
+                        <div class="card-body">
+                            <p><center><strong>Graduate Education</strong></center><br>
+                                <small class="card-text">Pioneering the urban and regional planning education in the Philippines, UP SURP offers innovative degree programs that cater to the   students' varying academic aspirations. What sets UP SURP apart from its contemporaries is the delivery of specialized courses, allowing aspiring planners to direct their passion and contribution  to specific planning sectors.</small></p>
+                        </div></a>
+                </div>
+                    
+                <div class="card d-none d-md-block" style="margin: 0 1.1em;">
+                    <a href="otes.html" class="vision-text" style="text-decoration: none">
+                        <center><img src="_img/otes_cover1.jpg"></center>
+                        <div class="card-body">
+                            <p>
+                                <center><strong>Training and Extension Services</strong></center><br>
+                                <small class="card-text">Fulfilling its training and extension mandates, the School maintains a working relationship with many government inter-agency committees. legislative bodies, and local governments, and assists them with their planning and capacity building needs.
+                                </small>
+                            </p>
+                        </div></a>
+                </div> 
+
+                <div class="card d-none d-md-block" style="margin: 0 1.1em;">
+                    <a href="orp.html" class="vision-text" style="text-decoration: none">
+                        <center><img src="_img/orp_cover1.jpg"></center>
+                        <div class="card-body">
+                            <p><center><strong>Research and Publication</strong></center><br>
+                                <small class="card-text">UP SURP remains responsive to its research mandate through independent and collaborative studies that are not only geared towards knowledge-generation, but also translate into practice and policy-making.</small></p>
+                        </div></a>
+                </div>
+
+                <div class="card d-none d-md-block" style="margin: 0 1.1em;">
+                    <a href="https://upsurplibrary.wixsite.com/upsurplib?fbclid=IwY2xjawIb4DxleHRuA2FlbQIxMAABHXElakzeZJFexenu3GkqV_mfBDdaI7z_otcrWUJp91LCeoGvWo8IW0l3wA_aem_rzd7oA4zEaG-vbASKEb9ig" target="_blank" class="vision-text" style="text-decoration: none">
+                        <center><img src="_img/lib_cover2.png"></center>
+                        <div class="card-body">
+                            <p>
+                                <center><strong>SURP Library</strong></center><br>
+                                <small class="card-text">The library provides a wide array of learning resources to support the School’s functions of conducting academic programs in planning; providing training courses, seminars, workshops in cooperation with other government agencies in carrying out research activities designed to solve problems of development particularly on settlement patterns and environmental studies.
+                                </small>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                       
+                
+                
+            </div> 
+        </center>
+        <br>
+<!--
+        <div style="width: 80%" id="custom_carousel" class="carousel slide">
+            <!-- Wrapper for slides         
+            <div class="controls">
+                <ul class="nav">
+                    <li data-target="#custom_carousel" data-slide-to="0" class="active"><a href="#">Dean's Corner</a></li>
+                    <li data-target="#custom_carousel" data-slide-to="1"><a href="#">Vision and Mission</a></li>
+                    <li data-target="#custom_carousel" data-slide-to="2"><a href="#">Core Values</a></li>
+                    <li data-target="#custom_carousel" data-slide-to="3"><a href="#">Strategic Objectives</a></li>
+                    <li data-target="#custom_carousel" data-slide-to="4"><a href="#">Strategic Focus</a></li>
+                </ul>
+            </div>
+            
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container-fluid">
+                        <div class="row1">
+                            <div class="col-md-3"><center><img src="_img/DCMagnaye1.jpg" style="border: 2px solid #800000; width: 100%; max-width: 30vw"></center><br>
+                                <center><strong style="color: black">Dina C. Magnaye, PhD,EnP</strong></center>
+                                <center><p style="color: black">Dean, UP SURP</p></center>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="ex1" style="color: black;">
+                                    <p style="font-size:2vw; color: green">Message from the Dean</p>
+                                    <p style="font-size:1vw;text-align: justify;font-style: italic; margin-right: 15px">&emsp;&emsp;Welcome to the official website of the University of the Philippines School of Urban and Regional Planning (UP SURP)!</p>
+                                    <p style="font-size:1vw;text-align: justify; font-style: italic;margin-right: 15px">&emsp;&emsp;Over the past years, the UP SURP has endeavored to reach out and create new linkages and forge local and international partnerships. Building bridges and connecting with people and institutions beyond UP SURP’s walls has long been one of the school’s main priorities to evolve and expand in a rapidly globalizing world. The UP SURP’s four-fold mandate of <b>Graduate Education, Research, Training, and Extension Services</b> is firmly established in the school’s Vision and Mission and manifested in four Core Values of <b><u>S</u></b>elfless Service, <b><u>U</u></b>nity, <b><u>R</u></b>espect, and <b><u>P</u></b>assion for Purpose and People <b>(SURP)</b>. Through this online platform, we can introduce the school and our work. As you explore our website, you will be navigated through the various offices of the school: you will be given a preview of what we do, not only as an academic institution that provides planning education that is innovative and globally competitive but also as one that continues to be at the helm of nation-building. </p>
+                                    <p style="font-size:1vw;text-align: justify;font-style: italic;margin-right: 15px">&emsp;&emsp;At UP SURP, we work together to ensure that our students enjoy a balance of academics, research, and exposure to the challenges of our profession. As an academic institution, the school welcomes planning practitioners working in various fields worldwide. The school’s curricular offerings ensure that our students obtain relevant and up-to-date knowledge through our faculty, who share their expertise from their respective fields. Our students come from diverse professions, making the learning experience at UP SURP most enriching in terms of knowledge sharing and building professional networks. Our research arm and our training and extension services offer professional assistance to those seeking pioneering and sustainable solutions to planning issues and challenges. </p>
+                                    <p style="font-size:1vw;text-align: justify;font-style: italic;margin-right: 15px">&emsp;&emsp;We hope you will find common interests and opportunities for linkages with us as you explore our website. Once again, welcome to the UP SURP website, and we look forward to connecting and forging partnerships with you!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
+                </div> 
+
+                <div class="item">
+                    <div class="container-fluid">
+                        <div class="row1">
+                            <div class="col-md-12">
+                                <div class="ex1" style="color: black; -webkit-text-stroke-width: 0.07mm; -webkit-text-stroke-color: black;">
+                                    <center>    
+                                        <p style="font-size:2vw; color: green">Vision</p>
+                                        <p>The University of the Philippines School of Urban and Regional Planning (UP SURP) shall be an institution positioned to lead the delivery of quality assured academic programs, research, extension services, and organization management in Southeast Asia that advocates innovative, relevant, and inclusive learning in pursuit of the green and global sustainable development agenda.</p>
+                                        <p style="font-size:2vw; color: green">Mission</p>
+                                        <p>The UP SURP is committed to building capable professional urban and regional planners in government institutions and private organizations by delivering innovative and relevant graduate courses, training, research, and extension services that support settlements, comprehensive and sustainable development planning. We nurture and cultivate a healthy workplace and continuously support the development of our faculty and staff. </p>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>           
+                </div> 
+
+                <div class="item">
+                    <div class="container-fluid">
+                        <div class="row1">
+                            <div class="col-md-3">
+                                <center><img src="_img/core%20values.jpg" width="100%" style="max-width:30vw"></center>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="ex1" style="color: black; -webkit-text-stroke-width: 0.05mm; -webkit-text-stroke-color: black;">
+                                    <p style="font-size:2vw; color: green">Core Values</p>
+                                    <p style="text-align: justify; margin-right: 15px">Core values are the very essence that defines and directs an organization. UP SURP adheres to the four core values,  which will set out the basis of professional and ethical conduct for each individual: Selfless Service, Unity, Respect, Passion for Purpose and People (SURP).<br><br>
+                                        <strong style="color: green"><span style='font-size:1.8em; color: #800000'>S</span>elfless Service</strong><br> 
+                                        Service is an intrinsic value revered above all by the University of the Philippines. To “serve the people” is a credo lived by countless graduates of the university, all in the name of honor and excellence. Selfless service takes this further, where selflessness means rising above oneself, and dedicating one’s purpose and actions for the greater good. Selfless service integrated into the mandate of the School ensures that it can give back in a more meaningful and fulfilling way to the people and the country. <br><br>
+                                        <strong style="color: green"><span style='font-size:1.8em; color: #800000'>U</span>nity</strong><br>
+                                        Unity as a core value is the strength and backbone of every organization. Building unity entails instilling a strong sense of trust, teamwork, and cooperation among colleagues. Each of the offices of the School is defined by its set of goals and responsibilities but forms part of a bigger whole. An interdependent relationship among the units exists where every office complements and renders support to the other. Clear communication and the smooth flow of data and information among offices result in a seamless and unified system of management.<br><br>
+                                        <strong style="color: green"><span style='font-size:1.8em; color: #800000'>R</span>espect</strong><br>
+                                        The planning profession is an amalgamation of knowledge and ideas, both old and new. Owing to its multifaceted characteristics, planning is a continuously evolving field with new and innovative ideas constantly produced. As such, it is inevitable to have opposing views and opinions on solutions to development issues. To have a healthy respect for colleagues opens avenues for discourse and rhetoric; this ensures everyone the right to participate, debate, and argue, and at the end of the day, still maintain a collegial relationship among co-workers.<br><br>
+                                        <strong style="color: green"><span style='font-size:1.8em; color: #800000'>P</span>assion for Purpose and People</strong><br>
+                                        To have a passion for one’s job gives someone a purpose at work. To nurture a passion for people results in selfless service. Passion is a core value that fuels one’s purpose and makes it more meaningful to connect with people. The School’s mandate constantly puts its members in the path of students, partners, and stakeholders. To have a burning sense of purpose and the desire to be of service to others gives a person a sense of pride to perform, fulfill, and contribute to the organization.</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>            
+                </div> 
+                
+                <div class="item">
+                    <div class="container-fluid">
+                        <div class="row1">
+                            <div class="col-md-12">
+                                <div class="ex1" style="color: black; -webkit-text-stroke-width: 0.07mm; -webkit-text-stroke-color: black;">
+                                    <center><a href="_img/strategic%20objectives.png"target="_blank"><img src="_img/strategic%20objectives.png" width=100%></a></center>      
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
+                </div> 
+                
+                <div class="item">
+                    <div class="container-fluid">
+                        <div class="row1">
+                            <div class="col-md-12">
+                                <div class="ex1" style="color: black; -webkit-text-stroke-width: 0.1mm; -webkit-text-stroke-color: black;">
+                                    <center><a href="_img/Breakthrough-and-Pathways-Theme-Strategic-Focus.png"target="_blank"><img src="_img/Breakthrough-and-Pathways-Theme-Strategic-Focus.png" width=100%></a></center>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>                    
+            </div> 
+        </div>
+
+        <script>
+            $(document).ready(function(ev){
+                    $('#custom_carousel').on('slide.bs.carousel', function (evt) {
+                        $('#custom_carousel .controls li.active').removeClass('active');
+                        $('#custom_carousel .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
+                    })
+            });
+        </script><br><br><br>-->
+
+        <div id="main">
+            
+            <div id="center-panel">
+                <div id="announcements-title" class="block-title">INFORMATION BOARD</div> 
+                <!-- Slideshow -->
+                <center>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" style="width: 85%">
+
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                            <li data-target="#myCarousel" data-slide-to="5"></li>
+                            <li data-target="#myCarousel" data-slide-to="6"></li>
+                            <li data-target="#myCarousel" data-slide-to="7"></li>
+                            <li data-target="#myCarousel" data-slide-to="8"></li>
+                            <li data-target="#myCarousel" data-slide-to="9"></li>
+                        </ol>
+
+                        <!-- Slides -->
+                        <div class="carousel-inner">
+
+                            <div class="item active">
+                                <img src="_img/info_board1.jpg" onclick="showImage(this.src)">
+                            </div>
+
+                            <div class="item">
+                                <img src="_img/info_board2.jpg" onclick="showImage(this.src)">
+                            </div>
+                            
+                            <div class="item">
+                                <img src="_img/info_board5.jpg" onclick="showImage(this.src)">
+                            </div>
+
+                            <div class="item">
+                                <img src="_img/info_board6.jpg" onclick="showImage(this.src)">
+                            </div>
+
+                            <div class="item">
+                                <img src="_img/info_board7.jpg" onclick="showImage(this.src)">
+                            </div>
+
+                            <div class="item">
+                                <img src="_img/info_board8.jpg" onclick="showImage(this.src)">
+                            </div>
+
+                            <div class="item">
+                                <img src="_img/info_board9.jpg" onclick="showImage(this.src)">
+                            </div>
+
+                            <div class="item">
+                                <img src="_img/info_board10.jpg" onclick="showImage(this.src)">
+                            </div>
+                            
+                            <div class="item">
+                                <img src="_img/info_board11.png" onclick="showImage(this.src)">
+                            </div>
+
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+
+                    </div>
+                </center>
+
+                    <!-- Zoom Modal -->
+                <center>
+                    <div id="imgModal" class="modal fade" tabindex="-1">
+                    <span class="close" data-dismiss="modal">&times;</span>
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img id="popupImg">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </center>
+
+                    <!-- jQuery -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+                    <!-- Bootstrap JS -->
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+                <script>
+                    function showImage(src){
+                        $("#popupImg").attr("src", src);
+                        $("#imgModal").modal("show");
+                    }
+                </script>
+            </div>
+            
+            <div id="left-panel">
+                <div id="announcements-title" class="block-title">ANNOUNCEMENTS</div>
+
+                <ul id="announcement-list" class="list_ul_amrc2" style="text-decoration-color:red;">
+                    
+                    <li>
+                        <a href="announcements/admission_result_2S_26-27.pdf" target="_blank">Admission Examination Results for 2nd Semester AY 2026-2027</a>
+                        <div class="announcement-date"><small>Date Posted: September 14, 2026</small></div>
+                    </li>
+                    
+                    <li>
+                        <a href="downloads/Thesis%20Grant%20Program%20Poster.pdf" target="_blank">SURP Thesis Grant Program AY 2026-2027</a>
+                        <div class="announcement-date"><small>Date Posted: August 26, 2026</small></div>
+                    </li>
+                    
+                    <li>
+                        <a href="announcements/MA%20Comprehensive%20Examination%20Schedule%201S%202026-2027.pdf" target="_blank">MA Comprehensive Examination Schedule 1S 2026-2027</a>
+                        <div class="announcement-date"><small>Date Posted: August 17, 2026</small></div>
+                    </li>
+                    
+                    <li>
+                        <a href="announcements/PhD%20Compre%20Examination%20Schedule.pdf" target="_blank">PhD Compre Examination Schedule</a>
+                        <div class="announcement-date"><small>Date Posted: August 17, 2026</small></div>
+                    </li>
+                    
+                    <li>
+                        <a href="announcements/Application%20for%20Graduation.First%20Semester%20AY%202026-2027.pdf" target="_blank">Application for Graduation, First Semester AY 2026-2027</a>
+                        <div class="announcement-date"><small>Date Posted: August 13, 2026</small></div>
+                    </li>
+                    
+                    <li>
+                        <a href="announcements/SURP%20Registration%20for%201st%20Sem%20AY%202026-2027.pdf" target="_blank">SURP Registration for First Semester AY 2026-2027</a>
+                        <div class="announcement-date"><small>Date Posted: July 28, 2026</small></div>
+                    </li>
+                    
+                    <li>
+                        <a href="announcements/Admission%20Application%20Announcement%20for%202S%20AY%202026-2027.pdf" target="_blank">Admission Application for Graduate Programs, Second Semester AY 2026 - 2027</a>
+                        <div class="announcement-date"><small>Date Posted: June 30, 2026</small></div>
+                    </li>
+                    
+                    <li>
+                        <a href="announcements/MA%20Comprehensive%20Examination%20Schedule%202S%202025-2026.pdf" target="_blank">MA(URP) Comprehensive Examination Schedule</a>
+                        <div class="announcement-date"><small>Date Posted: February 23, 2026</small></div>
+                    </li>
+
+                    <li>
+                        <a href="announcements/Admission%20Application%201st%20Sem%20AY%202627.pdf" target="_blank">SURP Application for Admission First Semester AY 2026-2027</a>
+                        <div class="announcement-date"><small>Date Posted: February 23, 2026</small></div>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/share/p/1N75nqSYrt/" target="_blank">Registration Period Guidelines for Students for 2S, AY 2025-2026</a>
+                        <div class="announcement-date"><small>Date Posted: January 13, 2026</small></div>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/share/p/1HVRQunHts/" target="_blank">Registration Guidelines Frequently Asked Questions (FAQs)</a>
+                        <div class="announcement-date"><small>Date Posted: January 13, 2026</small></div>
+                    </li>
+
+                    <li>
+                        <a href="announcements/SURP%20Registration%20for%202nd%20Sem%20AY%202025-2026.pdf" target="_blank">SURP Registration for Second Semester AY 2025-2026</a>
+                        <div class="announcement-date"><small>Date Posted: January 6, 2026</small></div>
+                    </li>
+
+                    <li>
+                        <a href="announcements/Application%20for%20Graduation,%202nd%20Sem%202025-2026.pdf" target="_blank">Application for Graduation, Second Semester 2025-2026</a>
+                        <div class="announcement-date"><small>Date Posted: January 6, 2026</small></div>
+                    </li>
+                </ul>
+
+                <!-- Separate Controls -->
+                <div style="margin-top:15px; text-align:center;">
+                    <button onclick="prevAnnouncement()">&#10094;</button>
+                    <button onclick="nextAnnouncement()">&#10095;</button>
+                </div>
+            </div>
+
+            <style>
+                #announcement-list li {
+                    display: none;
+                    margin-bottom: 10px;
+                }
+
+                button {
+                    padding: 8px 15px;
+                    margin: 5px;
+                    border: none;
+                    background: transparent;
+                    color: black;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    font-size: 1.5vw;
+                    width: 3vw;
+                    height: 3vw;
+                }
+
+                button:hover {
+                    background: lightgreen;
+}
+
+                #announcement-page-number {
+                    font-weight: bold;
+                    font-size: 16px;
+                    margin: 0 10px;
+                    vertical-align: middle;
+                }
+            </style>
+
+            <script>
+                let announcementPage = 0;
+                const announcementItemsPerPage = 4;
+                const announcementItems = document.querySelectorAll("#announcement-list li");
+                const totalAnnouncementPages =
+                      Math.ceil(announcementItems.length / announcementItemsPerPage);
+
+                function showAnnouncementPage(page) {
+                    announcementItems.forEach(item => item.style.display = "none");
+
+                    let start = page * announcementItemsPerPage;
+                    let end = start + announcementItemsPerPage;
+
+                    for (let i = start; i < end && i < announcementItems.length; i++) {
+                        announcementItems[i].style.display = "block";
+                    }
+
+                    document.getElementById("announcement-page-number").innerText =
+                        (announcementPage + 1) + " / " + totalAnnouncementPages;
+                }
+
+                function nextAnnouncement() {
+                    if (announcementPage < totalAnnouncementPages - 1) {
+                        announcementPage++;
+                        showAnnouncementPage(announcementPage);
+                    }
+                }
+
+                function prevAnnouncement() {
+                    if (announcementPage > 0) {
+                        announcementPage--;
+                        showAnnouncementPage(announcementPage);
+                    }
+                }
+
+                showAnnouncementPage(announcementPage);
+            </script>
+
+            <div id="right-panel">
+                <div id="announcements-title" class="block-title">MEMORANDUM</div>
+
+                <ul id="memo-list" class="list_ul_amrc2" style="text-decoration-color:red;">
+                    <li><a href="memo/MEMORANDUM%20NO.%20OGS-MAMG%202026-008_%20End-of-Term%20Reminders%20for%20Second%20Semester,%20AY%202025-2026.pdf" target="_blank">MEMORANDUM NO. OGS-MAMG 2026-008 End-of-Term Reminders for Second Semester, AY 2025-2026</a>
+                        <div class="announcement-date"><small>Date Posted: May 13, 2026</small></div>
+                    </li>
+
+                    <li><a href="memo/MEMORANDUM%20NO.%20OGS-MAMG%202025-001_%20School%20Calendar%20for%20AY%202025-2026.pdf" target="_blank">MEMORANDUM NO. OGS-MAMG 2025-001 School Calendar for AY 2025-2026</a>
+                        <div class="announcement-date"><small>Date Posted: May 13, 2026</small></div>
+                    </li>
+                </ul>
+
+                <!-- Controls -->
+                <div style="margin-top:15px; text-align:center;">
+                    <button onclick="prevPage()">&#10094;</button>
+                    <button onclick="nextPage()">&#10095;</button>
+                </div>
+            </div>
+
+            <style>
+                #memo-list li {
+                    display: none;
+                    margin-bottom: 10px;
+                }
+
+                button {
+                    padding: 8px 15px;
+                    margin: 5px;
+                    border: none;
+                    background: transparent;
+                    color: black;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    font-size: 1.5vw;
+                    width: 3vw;
+                    height: 3vw;
+                }
+
+                button:hover {
+                    background: transparent;
+                }
+
+                #page-number {
+                    font-weight: bold;
+                    font-size: 16px;
+                    margin: 0 10px;
+                    vertical-align: middle;
+                }
+            </style>
+
+            <script>
+                let currentPage = 0;
+                const itemsPerPage = 5;
+                const items = document.querySelectorAll("#memo-list li");
+                const totalPages = Math.ceil(items.length / itemsPerPage);
+
+                function showPage(page) {
+                    items.forEach(item => item.style.display = "none");
+
+                    let start = page * itemsPerPage;
+                    let end = start + itemsPerPage;
+
+                    for (let i = start; i < end && i < items.length; i++) {
+                        items[i].style.display = "block";
+                    }
+
+                    document.getElementById("page-number").innerText =
+                        (currentPage + 1) + " / " + totalPages;
+                }
+
+                function nextPage() {
+                    if (currentPage < totalPages - 1) {
+                        currentPage++;
+                        showPage(currentPage);
+                    }
+                }
+
+                function prevPage() {
+                    if (currentPage > 0) {
+                        currentPage--;
+                        showPage(currentPage);
+                    }
+                }
+
+                showPage(currentPage);
+            </script>
+            
+            
+            <!-- 
+            <div id="right-panel">
+                <div id="announcements-title" class="block-title">UP SURP COMPLEX</div> &emsp;
+                <center><div class="announcement-prev" style="width: 100%">
+                    <a href="SURP%20Complex.html">
+                    <video width="99%" height="99%" style="outline: 4px solid white; outline-offset: -3px;" loop="true" autoplay muted >
+                    <source src="_img/URPComplex1.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+                    Your browser does not support the video tag.
+                    </video></a>
+                </div></center><br>
+                <center><p><small>Proposed UP SURP Complex Video as of 2018</small></p></center><br><br>
+            </div>-->
+            
+            
+            
+            <div id="center-panel">
+                <div class="container" style="width:80%;">
+                    <div class="row">
+                        <div class="well">
+
+                            <h1 id="announcements-title"
+                                class="block-title"
+                                style="margin-top:-0.7vw; font-size:1.8vw; background:transparent;">
+                                EVENTS
+                            </h1>
+
+                            <div class="list-group">
+
+                                <a href="event.html" class="list-group-item event-item">
+                                    <div class="media col-md-4">
+                                        <figure>
+                                            <img class="media-object img-rounded img-responsive"
+                                                 src="/events/Events67-1%20-%20Copy.jpg">
+                                        </figure>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <p class="vision-text">
+                                            <b>UP SURP Successfully Conducts SCURP 2026</b><br>
+                                            <small style="color:darkred">Date Posted: June 8, 2026</small><br><br>
+                                            <small>
+                                                The UP School of Urban and Regional Planning (UP SURP) through its Office of Training and Extension Services (OTES) congratulates the participants of the Special Course on Urban and Regional Planning (SCURP) 2026 for successfully completing the five-day online training program held on 11–15 May 2026.
+                                            </small>
+                                        </p>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                </a>
+
+                                <!-- EVENT 1 -->
+                                <a href="event.html" class="list-group-item event-item">
+                                    <div class="media col-md-4">
+                                        <figure>
+                                            <img class="media-object img-rounded img-responsive"
+                                                 src="/events/Events66-1 - Copy.jpg">
+                                        </figure>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <p class="vision-text">
+                                            <b>UP SURP Faculty, Staff, and Project Partners Attended the Policy Brief Benchmarking and Workshop Activity</b><br>
+                                            <small style="color:darkred">Date Posted: May 26, 2026</small><br><br>
+                                            <small>
+                                                On 19 and 21 May 2026, faculty and staff at UP SURP, as well as partners of the ongoing RURBANISE project from the UP Resilience Institute and Technical Assistance Movement for People and Environment, Inc., participated in the Policy Brief Benchmarking and Workshop activity.
+                                            </small>
+                                        </p>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                </a>
+
+                                <!-- EVENT 2 -->
+                                <a href="event.html" class="list-group-item event-item">
+                                    <div class="media col-md-4">
+                                        <figure>
+                                            <img class="media-object img-rounded img-responsive"
+                                                 src="/events/Events65-1.jpg">
+                                        </figure>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <p class="vision-text">
+                                            <b>UP SURP Delegates Participate in House Committee Hearing</b><br>
+                                            <small style="color:darkred">Date Posted: March 4, 2026</small><br><br>
+                                            <small>
+                                                Dean Dina C. Magnaye and Director Reynold Ferdinand G. Manegdeg represented UP SURP in a Congress hearing of the Committee on Government Enterprises and Privatization on the proposed bill establishing the Sierra Madre Conservation Authority.
+                                            </small>
+                                        </p>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                </a>
+
+                                <!-- EVENT 3 -->
+                                <a href="event.html" class="list-group-item event-item">
+                                    <div class="media col-md-4">
+                                        <figure>
+                                            <img class="media-object img-rounded img-responsive"
+                                                 src="/events/Events64-1 - Copy.jpg">
+                                        </figure>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <p class="vision-text">
+                                            <b>SURP Researcher Featured in Diliman Research Magazine</b><br>
+                                            <small style="color:darkred">Date Posted: February 7, 2026</small><br><br>
+                                            <small>
+                                                We are proud to share that the research project “Co-Producing Community Empowerment: Learnings from the Move Up Alternative Temporary Shelters (ATS)” by Ar. EnP. Geomilie S. Tumamao-Guittap, University Researcher at UP SURP under the Office of Research and Publication (ORP), has been featured in the Diliman Research Magazine, Saliksikat Vol. II, Issue No. 2.
+                                            </small>
+                                        </p>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                </a>
+
+                                <!-- EVENT 4 -->
+                                <a href="event.html" class="list-group-item event-item">
+                                    <div class="media col-md-4">
+                                        <figure>
+                                            <img class="media-object img-rounded img-responsive"
+                                                 src="/events/Events63-2 - Copy.jpg">
+                                        </figure>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <p class="vision-text">
+                                            <b>UP SURP and NAPC Signs Statement of Commitment</b><br>
+                                            <small style="color:darkred">Date Posted: February 6, 2026</small><br><br>
+                                            <small>
+                                                On 04 February 2026, the University of the Philippines School of Urban and Regional Planning (UP SURP) and the National Anti-Poverty Commission (NAPC) formalized their partnership by signing a Statement of Commitment (SoC) to promote mutual advocacies and engage in cooperative actions. This collaboration aims at strengthening anti-poverty initiatives through meaningful and active involvement through technical assistance and knowledge-sharing about local planning and program development. 
+                                            </small>
+                                        </p>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                </a>
+
+                                <!-- EVENT 5 -->
+                                <a href="event.html" class="list-group-item event-item">
+                                    <div class="media col-md-4">
+                                        <figure>
+                                            <img class="media-object img-rounded img-responsive"
+                                                 src="/events/Events62-2.jpg">
+                                        </figure>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <p class="vision-text">
+                                            <b>DSHUD and UP SURP Strengthen Partnerships with LGUs</b><br>
+                                            <small style="color:darkred">Date Posted: January 29, 2026</small><br><br>
+                                            <small>
+                                                On 24 January 2026, the Department of Human Settlements and Urban Development (DHSUD), through the Environmental, Land Use, Urban Planning and Development Bureau (ELUPDB), in partnership with the UP School of Urban and Regional Planning (UP SURP), through its Office of Training and Extension Services (OTES), welcomed representatives from the local government units (LGUs) of Ambaguio, Nueva Vizcaya; Padre Burgos, Quezon; and Remedios T. Romualdez, Agusan del Norte. The activity marked the conduct of the SURP Refining Institutions through Skills Enhancement (SURP RISE) Program and the Orientation on Climate and Disaster Risk Assessment (CDRA), held at the DHSUD–ELUPDB Urban Lab in Quezon City. 
+                                            </small>
+                                        </p>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                </a>
+
+                                <!-- EVENT 6 -->
+                                <a href="event.html" class="list-group-item event-item">
+                                    <div class="media col-md-4">
+                                        <figure>
+                                            <img class="media-object img-rounded img-responsive"
+                                                 src="/events/Events61-1a.jpg">
+                                        </figure>
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <p class="vision-text">
+                                            <b>UP SURP Welcomes the 6th Batch of SURP RISE Trainees</b><br>
+                                            <small style="color:darkred">Date Posted: January 29, 2026</small><br><br>
+                                            <small>
+                                                Three local government units (LGUs) participated in SURP RISE Year 3 Batch 2, implemented by the UP School of Urban and Regional Planning through the Office of Training and Extension Services (OTES). 
+                                            </small>
+                                        </p>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                </a>
+
+                            </div>
+
+                            <!-- PAGINATION -->
+                            <center><div class="pagination-container" style="font-size: 1vw;">
+                                <ul class="pagination" id="pagination"></ul>
+                            </div></center>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <script>
+                document.addEventListener("DOMContentLoaded", function () {
+
+                    const itemsPerPage = 3;
+                    const items = document.querySelectorAll(".event-item");
+                    const totalPages = Math.ceil(items.length / itemsPerPage);
+
+                    let currentPage = 1;
+
+                    function showPage(page) {
+
+                        currentPage = page;
+
+                        items.forEach(function(item) {
+                            item.style.display = "none";
+                        });
+
+                        const start = (page - 1) * itemsPerPage;
+                        const end = start + itemsPerPage;
+
+                        for (let i = start; i < end && i < items.length; i++) {
+                            items[i].style.display = "block";
+                        }
+
+                        renderPagination();
+                    }
+
+                    function renderPagination() {
+
+                        const pagination = document.getElementById("pagination");
+                        pagination.innerHTML = "";
+
+                        // Previous Button
+                        const prev = document.createElement("li");
+                        prev.className = currentPage === 1 ? "disabled" : "";
+
+                        prev.innerHTML =
+                            '<a href="#"><span>&laquo;</span></a>';
+
+                        prev.onclick = function(e) {
+                            e.preventDefault();
+
+                            if (currentPage > 1) {
+                                showPage(currentPage - 1);
+                            }
+                        };
+
+                        pagination.appendChild(prev);
+
+                        // Page Numbers
+                        for (let i = 1; i <= totalPages; i++) {
+
+                            const page = document.createElement("li");
+
+                            if (i === currentPage) {
+                                page.className = "active";
+                            }
+
+                            page.innerHTML =
+                                '<a href="#">' + i + '</a>';
+
+                            page.onclick = function(e) {
+                                e.preventDefault();
+                                showPage(i);
+                            };
+
+                            pagination.appendChild(page);
+                        }
+
+                        // Next Button
+                        const next = document.createElement("li");
+                        next.className = currentPage === totalPages ? "disabled" : "";
+
+                        next.innerHTML =
+                            '<a href="#"><span>&raquo;</span></a>';
+
+                        next.onclick = function(e) {
+                            e.preventDefault();
+
+                            if (currentPage < totalPages) {
+                                showPage(currentPage + 1);
+                            }
+                        };
+
+                        pagination.appendChild(next);
+                    }
+
+                    showPage(1);
+                });
+                </script>
+            
+        </div>
+ 
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }}
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <!-- Default Statcounter code for UP SURP Website
+        https://www.surp.upd.edu.ph/ -->
+        <script type="text/javascript">
+            var sc_project=12977467; 
+            var sc_invisible=1; 
+            var sc_security="6e50bd91"; 
+        </script>
+        <script type="text/javascript"
+                src="https://www.statcounter.com/counter/counter.js"
+                async></script>
+        <noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/12977467/0/6e50bd91/1/" alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+        <!-- End of Statcounter Code -->
+        
+        <div id="footer">
+            <footer class="footer" style="width: 100%">
+                <div class="container bottom_border">  
+                    <div class="row">
+                                    
+                        <div class="col-md-4">
+                            <h5 class="headin5_amrc col_white_amrc1 pt2">Find Us</h5>
+                            <ul class="footer_ul_amrc3">
+                                <li><a href="https://goo.gl/maps/5ePnWtGdmndKtC7u6" target="_blank"><strong>School of Urban and Regional Planning</strong></a></li>
+                                <li><a href="https://goo.gl/maps/5ePnWtGdmndKtC7u6" target="_blank">E. Jacinto St., Diliman, Quezon City 1101 Philippines</a></li><br>               
+                                <li><p>VoIP</p></li>
+                                <li><p>(632) 8981-8500 &emsp;local 4084 <i>(Office of the Dean)</i></p></li>
+                                <li><p>(632) 8981-8500 &emsp;local 4081 <i>(Office of the College Secretary)</i></p></li>
+                                <li><p>(632) 8981-8500 &emsp;local 4100 <i>(Office of Administration & Management Support)</i></p></li>
+                                <li><p>(632) 8981-8500 &emsp;local 8777 <i>(Office of Training and Extension Services</i></p></li>
+                                <li><p>(632) 8981-8500 &emsp;local 4096 <i>(Office of Research and Publication</i></p></li>
+                                <li><p>(632) 8981-8500 &emsp;local 4082 <i>(SURP Library)</i></p></li>
+                            </ul>
+                            <a href="https://www.foi.gov.ph/requests?status=&category=&search=University+of+the+Philippines+Diliman" target="_blank"><img src="_img/logo-foi.png"  style="width:5vw;height:auto;"></a>&nbsp;
+                            <a href="https://upd.edu.ph/transparency-seal/" target="_blank"><img src="_img/logo-pts.png"  style="width:5vw;height:auto;"></a>&nbsp;
+                            <a href="_img/DPO-DPS.png" target="_blank"><img src="_img/DPO-DPS.png"  style="width:4vw;height:auto;"></a>
+                            <ul class="footer_ul_amrc3">
+                                <li><a href="https://upd.edu.ph/privacy/notice/" target="_blank">Website Privacy Policy</a></li>
+                            </ul>
+                            
+                        </div>
+                                    
+                        <div class="col-md-4">
+                            <h5 class="headin5_amrc col_white_amrc2 pt2">Email Us</h5>
+                            <ul class="footer_ul_amrc1">
+                                <li><p>Office of the Dean - surp.od.upd@up.edu.ph</p></li>
+                                <li><p>Office of the College Secretary - surp.ogs.upd@up.edu.ph</p></li>
+                                <li><p>Office of Administration & Management Support - surp.ocs.upd@up.edu.ph</p></li>
+                                <li><p>Office of Training and Extension Services - surptraining.upd@up.edu.ph</p></li>
+                                <li><p>Office of Research and Publications - surporp.upd@up.edu.ph</p></li>
+                                <li><p>SURP Library - surplib.upd@up.edu.ph</p></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <h5 class="headin5_amrc col_white_amrc3 pt2">Linkages</h5>
+                            <ul class="footer_ul_amrc2" style="font-size: 0.9vw">
+                                <li><a href="https://www.dilg.gov.ph/" target="_blank">Department of the Interior and Local Government</a></li>
+                                <li><a href="#">House Special Committee on Land Use</a></li>
+                                <li><a href="#">DENR - Second Land Administration and Management Project (LAMP2)</a></li>
+                                <li><a href="https://www.tu-dortmund.de/en/" target="_blank">Technische Universitat Dortmund (TUDo) - Germany</a></li>
+                                <li><a href="https://www.rmit.edu.au/" target="_blank">Royal Melbourne Institute of Technology (RMIT) - Australia</a></li>
+                                <li><a href="https://en.seoultech.ac.kr/" target="_blank">Seoul National University of Technology - South Korea</a></li>
+                                <li><a href="https://www.kyushu-u.ac.jp/en/" target="_blank">Kyushu University - Japan</a></li>
+                                <li><a href="https://you.ubc.ca/ubc-life/vancouver/?utm_source=google&utm_medium=cpc&utm_campaign=Nonbranded&utm_content=Nonbranded&utm_source=google&utm_medium=cpc&utm_campaign=Branded&utm_content=Branded&gclid=EAIaIQobChMItsTfpc3D-wIV9JJmAh3SMQ9dEAAYASAAEgKTwvD_BwE" target="_blank">University of British Columbia (UBC) - Canada</a></li>
+                                <li><a href="https://raumplanung.tu-dortmund.de/en/prospective-students/master-spring/?fbclid=IwAR1_ooVsHvqOphqelBlxwaK_0R2wg3VZ67x1IVlZTCzwW2PiZpF0tdU0imQ"   target="_blank">TuDo SPRING Network</a></li>
+                                <li><a href="#">UN HABITAT Partner University Network</a></li>
+                                <li><a href="https://www.pssc.org.ph/" target="_blank">Philippine Social Science Council (PSSC)</a></li><br>
+                                <li><a href="https://www.facebook.com/surpinfo" target="_blank"><img src="_img/fb2.png" style="width: 12vw"></a></li><br><br>
+                                <li><a href="http://10.37.0.54/surplus/home.php" target="_blank">SURPLUS<br></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                 
+                <div class="container">
+                    <ul class="foote_bottom_ul_amrc">
+                        <li><a href="https://crs.upd.edu.ph/" target="_blank">CRS</a></li>
+                        <li><a href="https://mail.upd.edu.ph/" target="_blank">Webmail</a></li>
+                        <li><a href="http://ilib.upd.edu.ph/" target="_blank">iLib</a></li>
+                        <li><a href="https://upd.edu.ph/" target="_blank">UP Diliman</a></li>
+                        <li><a href="https://up.edu.ph/" target="_blank">UP System<br></a></li>
+                    </ul>
+                    <!--foote_bottom_ul_amrc ends here-->
+                    <div><p style="position:absolute; margin-top: -4.2vw; font-weight: 350">Copyright © 2024 | UP SURP<br><small style="font-weight:400"><i>jrj</i></small></p></div>
+                </div>
+
+            </footer>
+            <div id="footer-bottom">&nbsp;</div>
+        </div>
+    </body>
+</html>
